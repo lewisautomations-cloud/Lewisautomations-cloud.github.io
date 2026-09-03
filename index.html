@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[YOUR NAME]</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #f6f7f9;
+    --text: #1a1a1a;
+    --text-muted: #5b6270;
+    --accent: #2f6fed;
+    --border: #e4e6eb;
+    --radius: 12px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --bg-alt: #1c1f25;
+      --text: #eef0f3;
+      --text-muted: #9aa2b1;
+      --accent: #6d9bff;
+      --border: #2a2e37;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  header {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 72px 24px 32px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 24px 24px 0;
+    font-size: 0.95rem;
+  }
+
+  nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+
+  nav a:hover { color: var(--accent); }
+
+  .eyebrow {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 0 0 12px;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin: 0;
+    max-width: 60ch;
+  }
+
+  main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  section {
+    margin-top: 56px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 0 0 16px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+  }
+
+  p { margin: 0 0 12px; }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+  }
+
+  .card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .skill {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  footer {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 16px;
+  }
+
+  .links a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .links a:hover { color: var(--accent); border-color: var(--accent); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#highlights">Highlights</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <p class="eyebrow">[YOUR MAJOR] · [YOUR YEAR] at [YOUR SCHOOL]</p>
+  <h1>[YOUR NAME]</h1>
+  <p class="tagline">[ONE SENTENCE ABOUT WHAT YOU'RE STUDYING, BUILDING, OR LOOKING FOR.]</p>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      [A SHORT PARAGRAPH ABOUT YOURSELF — WHAT YOU'RE STUDYING, WHAT YOU'RE
+      GOOD AT, AND WHAT YOU'RE LOOKING FOR. WRITE IT IN YOUR OWN VOICE.]
+    </p>
+    <p>
+      [A SECOND PARAGRAPH WITH ONE OR TWO SPECIFIC THINGS YOU'VE ACTUALLY
+      DONE — A PROJECT, A JOB, AN ORGANIZATION. SPECIFIC BEATS IMPRESSIVE.]
+    </p>
+  </section>
+
+  <section id="highlights">
+    <h2>Highlights</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>[PROJECT OR ROLE ONE]</h3>
+        <p>[ONE OR TWO SENTENCES ON WHAT IT WAS AND WHAT YOU DID.]</p>
+      </div>
+      <div class="card">
+        <h3>[PROJECT OR ROLE TWO]</h3>
+        <p>[ONE OR TWO SENTENCES ON WHAT IT WAS AND WHAT YOU DID.]</p>
+      </div>
+      <div class="card">
+        <h3>[PROJECT OR ROLE THREE]</h3>
+        <p>[ONE OR TWO SENTENCES ON WHAT IT WAS AND WHAT YOU DID.]</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill">[SKILL ONE]</span>
+      <span class="skill">[SKILL TWO]</span>
+      <span class="skill">[SKILL THREE]</span>
+      <span class="skill">[SKILL FOUR]</span>
+      <span class="skill">[SKILL FIVE]</span>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <span>&copy; <span id="year"></span> [YOUR NAME]</span>
+  <div class="links">
+    <a href="mailto:[YOUR EMAIL]">Email</a>
+    <a href="[YOUR LINKEDIN URL]">LinkedIn</a>
+    <a href="[YOUR GITHUB URL]">GitHub</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

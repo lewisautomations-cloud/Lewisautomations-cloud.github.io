@@ -1,0 +1,2075 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Yohan Lewis - founder of Lewis Automations and Sports Marketing and Finance student at Xavier University. AI automation systems that make sure follow-up never depends on someone remembering.">
+<meta name="author" content="Yohan Lewis">
+<meta name="theme-color" content="#F0EEE6">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23F0EEE6'/><circle cx='16' cy='16' r='10.5' fill='none' stroke='%23C15F3C' stroke-width='1.4'/><circle cx='16' cy='16' r='4.5' fill='%23C15F3C'/><circle cx='16' cy='5.5' r='2.2' fill='%23191917'/></svg>">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yohan Lewis">
+<meta property="og:description" content="Yohan Lewis - founder of Lewis Automations and Sports Marketing and Finance student at Xavier University. AI automation systems that make sure follow-up never depends on someone remembering.">
+<style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Yohan Lewis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --ground:#F0EEE6;
+  --surface:#FAF9F5;
+  --surface-2:#E8E5D9;
+  --rule:#D8D4C6;
+  --rule-soft:#E3E0D4;
+  --ink:#191917;
+  --ink-2:#57544C;
+  --ink-3:#8B8779;
+  --clay:#C15F3C;
+  --clay-ink:#8F3F22;
+  --clay-wash:#F2E5DD;
+  --on-clay:#FFF8F4;
+  --slab:#8B3D20;
+  --on-slab:#FBF1EB;
+  --on-slab-2:#E7C9BA;
+
+  --wrap:1120px;
+  --gutter:clamp(20px,5vw,56px);
+  --band:clamp(56px,9vw,108px);
+
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#17170F;
+    --surface:#201F1B;
+    --surface-2:#2B2A25;
+    --rule:#393831;
+    --rule-soft:#2F2E28;
+    --ink:#F2F0E7;
+    --ink-2:#B6B2A5;
+    --ink-3:#8B8779;
+    --clay:#D9856A;
+    --clay-ink:#E7A088;
+    --clay-wash:#2E241F;
+    --on-clay:#1A120E;
+    --slab:#33231C;
+    --on-slab:#F5EDE8;
+    --on-slab-2:#C7A797;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#17170F;
+  --surface:#201F1B;
+  --surface-2:#2B2A25;
+  --rule:#393831;
+  --rule-soft:#2F2E28;
+  --ink:#F2F0E7;
+  --ink-2:#B6B2A5;
+  --ink-3:#8B8779;
+  --clay:#D9856A;
+  --clay-ink:#E7A088;
+  --clay-wash:#2E241F;
+  --on-clay:#1A120E;
+  --slab:#33231C;
+  --on-slab:#F5EDE8;
+  --on-slab-2:#C7A797;
+}
+
+/* ---------- base ---------- */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%}
+::selection{background:var(--clay);color:var(--ground)}
+:focus-visible{outline:2px solid var(--clay);outline-offset:3px;border-radius:3px}
+
+.wrap{
+  max-width:var(--wrap);
+  margin-inline:auto;
+  padding-inline:var(--gutter);
+}
+section[id]{scroll-margin-top:78px}
+.band{padding-block:var(--band)}
+.rule-top{border-top:1px solid var(--rule)}
+
+h1,h2,h3,h4{margin:0;text-wrap:balance}
+p{margin:0}
+.prose{max-width:62ch}
+
+.display{
+  font-family:var(--serif);
+  font-weight:400;
+  font-size:clamp(3.1rem,9.5vw,5.6rem);
+  line-height:.94;
+  letter-spacing:-.035em;
+}
+.h2{
+  font-family:var(--serif);
+  font-weight:400;
+  font-size:clamp(1.95rem,4.4vw,3rem);
+  line-height:1.08;
+  letter-spacing:-.022em;
+}
+.deck{
+  font-family:var(--serif);
+  font-weight:300;
+  font-size:clamp(1.3rem,2.7vw,1.85rem);
+  line-height:1.3;
+  letter-spacing:-.014em;
+  color:var(--ink);
+}
+.lede{font-size:1.075rem;color:var(--ink-2)}
+.eyebrow{
+  font-family:var(--mono);
+  font-size:.7rem;
+  font-weight:500;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+}
+
+a{color:inherit}
+.tlink{
+  color:var(--clay-ink);
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+  transition:text-decoration-thickness .18s ease;
+}
+.tlink:hover{text-decoration-thickness:2px}
+
+/* ---------- nav ---------- */
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:100;
+  background:var(--clay);color:var(--on-clay);
+  padding:10px 16px;border-radius:0 0 8px 0;
+  font-size:.85rem;text-decoration:none;
+}
+.skip:focus{left:0}
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:var(--ground);
+  background:color-mix(in srgb,var(--ground) 86%,transparent);
+  -webkit-backdrop-filter:saturate(1.4) blur(10px);
+  backdrop-filter:saturate(1.4) blur(10px);
+  border-bottom:1px solid var(--rule-soft);
+}
+.nav-in{
+  max-width:var(--wrap);margin-inline:auto;
+  padding:13px var(--gutter);
+  display:flex;align-items:center;gap:20px;
+}
+.mark{
+  display:flex;align-items:center;gap:9px;
+  font-weight:600;letter-spacing:-.012em;
+  text-decoration:none;font-size:.95rem;
+}
+.mark-dot{
+  width:11px;height:11px;border-radius:50%;
+  background:var(--clay);flex:none;
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--clay) 22%,transparent);
+}
+.nav-links{
+  margin-left:auto;display:flex;gap:22px;align-items:center;
+  font-size:.875rem;
+}
+.nav-links a{
+  text-decoration:none;color:var(--ink-2);
+  padding-block:4px;position:relative;
+  transition:color .18s ease;
+}
+.nav-links a::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:var(--clay);transform:scaleX(0);transform-origin:left;
+  transition:transform .25s cubic-bezier(.2,.7,.3,1);
+}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{transform:scaleX(1)}
+@media (max-width:720px){.nav-links{gap:15px;font-size:.8rem}}
+@media (max-width:520px){.nav-links a[data-opt]{display:none}}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--sans);font-size:.9rem;font-weight:500;
+  padding:11px 20px;border-radius:999px;
+  text-decoration:none;cursor:pointer;
+  border:1px solid transparent;
+  transition:transform .16s ease,background .16s ease,border-color .16s ease,color .16s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--clay);color:var(--on-clay);border-color:var(--clay)}
+.btn-primary:hover{background:var(--clay-ink);border-color:var(--clay-ink);color:var(--ground)}
+.btn-ghost{border-color:var(--rule);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--ink);background:var(--surface)}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px}
+
+/* ---------- hero ---------- */
+.hero{padding-block:clamp(46px,8vw,86px) clamp(44px,7vw,80px)}
+.hero-grid{
+  display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);
+  gap:clamp(28px,5vw,64px);align-items:center;
+}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .orbit{order:-1;justify-self:start}
+}
+.hero-copy{display:flex;flex-direction:column;gap:22px;align-items:flex-start}
+.name-line{display:flex;flex-direction:column;gap:14px}
+
+/* orbit mark */
+.orbit{width:min(310px,74vw);justify-self:center;position:relative}
+.orbit svg{width:100%;height:auto;display:block;overflow:visible}
+.orbit-img{
+  position:absolute;left:26%;top:26%;width:48%;height:48%;
+  border-radius:50%;object-fit:cover;display:none;
+  box-shadow:0 0 0 1px var(--rule),0 10px 30px -14px rgba(0,0,0,.4);
+}
+.orbit[data-photo="on"] .orbit-img{display:block}
+.orbit[data-photo="on"] .core,
+.orbit[data-photo="on"] .halo{display:none}
+.orbit .ring{fill:none;stroke:var(--rule);stroke-width:1}
+.orbit .ring.dash{stroke-dasharray:3 7;stroke:var(--ink-3);opacity:.55}
+.orbit .core{fill:var(--clay)}
+.orbit .halo{fill:none;stroke:var(--clay);stroke-width:1;opacity:.35}
+.orbit .dot{fill:var(--ink)}
+.orbit .dot.alt{fill:var(--clay)}
+.orbit .spin,.orbit .halo{transform-origin:120px 120px;transform-box:view-box}
+.s1{animation:rot 26s linear infinite}
+.s2{animation:rot 17s linear infinite reverse}
+.s3{animation:rot 10s linear infinite}
+.orbit .halo{animation:breathe 5.5s ease-in-out infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+@keyframes breathe{0%,100%{transform:scale(1);opacity:.4}50%{transform:scale(1.6);opacity:.06}}
+
+/* ---------- stats ---------- */
+.stats{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:clamp(18px,3vw,40px);
+}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}}
+.stat{display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--rule);padding-top:14px}
+.stat-num{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(1.85rem,4vw,2.7rem);line-height:1;
+  letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+}
+.stat-lab{font-size:.85rem;color:var(--ink-2);line-height:1.45}
+
+/* ---------- section head ---------- */
+.shead{display:flex;flex-direction:column;gap:14px;margin-bottom:clamp(30px,4.5vw,52px)}
+
+/* ---------- automations ---------- */
+.build-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(16px,2.4vw,26px);
+}
+@media (max-width:820px){.build-grid{grid-template-columns:1fr}}
+.build{
+  background:var(--surface);
+  border:1px solid var(--rule-soft);
+  border-radius:14px;
+  padding:24px 22px 26px;
+  display:flex;flex-direction:column;gap:10px;
+  transition:transform .22s cubic-bezier(.2,.7,.3,1),border-color .22s ease;
+}
+.build:hover{transform:translateY(-3px);border-color:var(--rule)}
+.build h3{font-size:1.05rem;font-weight:600;letter-spacing:-.01em}
+.build p{font-size:.94rem;color:var(--ink-2)}
+.build-icon{
+  width:26px;height:26px;color:var(--clay);
+}
+.build-icon svg{width:100%;height:100%;display:block}
+
+/* pipeline */
+.pipe-wrap{margin-top:clamp(38px,5vw,60px)}
+.pipe-box{position:relative;margin-top:22px}
+.pipe{
+  list-style:none;margin:0;padding:0;
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:20px;position:relative;
+}
+.pipe::before{
+  content:"";position:absolute;
+  left:12%;right:12%;top:11px;height:1px;
+  background:var(--rule);
+}
+.pipe-pulse{
+  position:absolute;top:6px;left:12%;
+  width:11px;height:11px;border-radius:50%;
+  background:var(--clay);
+  box-shadow:0 0 0 4px color-mix(in srgb,var(--clay) 20%,transparent);
+  animation:travel 8s cubic-bezier(.65,0,.35,1) infinite;
+}
+@keyframes travel{
+  0%{left:12%;opacity:0}
+  6%{opacity:1}
+  22%{left:12%}
+  33%{left:37.3%}
+  47%{left:37.3%}
+  58%{left:62.6%}
+  72%{left:62.6%}
+  83%{left:88%}
+  94%{left:88%;opacity:1}
+  100%{left:88%;opacity:0}
+}
+.pstep{display:flex;flex-direction:column;gap:9px;position:relative;padding-top:34px}
+.pstep::before{
+  content:"";position:absolute;top:6px;left:0;
+  width:11px;height:11px;border-radius:50%;
+  background:var(--ground);border:1px solid var(--ink-3);
+  animation:lightup 8s ease-in-out infinite;
+}
+.pstep:nth-child(1)::before{animation-delay:0s}
+.pstep:nth-child(2)::before{animation-delay:2s}
+.pstep:nth-child(3)::before{animation-delay:4s}
+.pstep:nth-child(4)::before{animation-delay:6s}
+@keyframes lightup{
+  0%,4%{background:var(--ground);border-color:var(--ink-3)}
+  8%,22%{background:var(--clay);border-color:var(--clay)}
+  30%,100%{background:var(--ground);border-color:var(--ink-3)}
+}
+.pnum{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--ink-3)}
+.pstep h4{font-size:.98rem;font-weight:600;letter-spacing:-.008em}
+.pstep p{font-size:.88rem;color:var(--ink-2);line-height:1.5}
+@media (max-width:760px){
+  .pipe{grid-template-columns:1fr;gap:24px}
+  .pipe::before{left:5px;right:auto;top:6px;bottom:6px;width:1px;height:auto}
+  .pipe-pulse{display:none}
+  .pstep{padding-top:0;padding-left:26px}
+  .pstep::before{top:5px}
+}
+
+/* status note */
+.note{
+  margin-top:clamp(38px,5vw,58px);
+  background:var(--clay-wash);
+  border-left:2px solid var(--clay);
+  border-radius:0 12px 12px 0;
+  padding:22px 24px;
+  display:flex;flex-direction:column;gap:9px;
+}
+.note h3{font-size:.95rem;font-weight:600;letter-spacing:-.008em}
+.note p{font-size:.95rem;color:var(--ink-2);max-width:64ch}
+
+/* stack chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{
+  font-family:var(--mono);font-size:.74rem;letter-spacing:.02em;
+  padding:6px 11px;border-radius:7px;
+  border:1px solid var(--rule);color:var(--ink-2);
+  background:var(--surface);
+}
+
+/* ---------- how I can help ---------- */
+.pull{
+  margin:clamp(30px,4vw,44px) 0 clamp(34px,4.5vw,50px);
+  padding-left:clamp(18px,3vw,28px);
+  border-left:2px solid var(--clay);
+  font-family:var(--serif);font-weight:300;
+  font-size:clamp(1.25rem,2.7vw,1.75rem);
+  line-height:1.35;letter-spacing:-.015em;
+  color:var(--ink);max-width:34ch;
+}
+.pull em{font-style:italic;color:var(--clay-ink)}
+
+.offer-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));
+  gap:clamp(20px,3vw,34px);
+}
+.offer{
+  display:flex;flex-direction:column;gap:8px;
+  border-top:2px solid var(--rule);
+  padding-top:16px;
+  transition:border-color .22s ease;
+}
+.offer:hover{border-top-color:var(--clay)}
+.offer h3{font-size:1.06rem;font-weight:600;letter-spacing:-.012em}
+.offer p{font-size:.93rem;color:var(--ink-2)}
+.offer-tag{
+  font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3);
+}
+.offer-tag.hot{color:var(--clay-ink)}
+
+.roi{
+  margin-top:clamp(42px,5.5vw,66px);
+  background:var(--surface);
+  border:1px solid var(--rule-soft);
+  border-radius:16px;
+  padding:clamp(24px,3.4vw,38px);
+}
+.roi-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:clamp(20px,3vw,32px);margin-top:22px;
+}
+.roi-item{display:flex;flex-direction:column;gap:8px}
+.roi-item h4{font-size:.98rem;font-weight:600;letter-spacing:-.01em}
+.roi-eq{
+  font-family:var(--mono);font-size:.72rem;line-height:1.5;
+  color:var(--clay-ink);
+  background:var(--clay-wash);
+  border-radius:6px;padding:6px 9px;
+  align-self:flex-start;max-width:100%;
+}
+.roi-item p{font-size:.9rem;color:var(--ink-2);line-height:1.55}
+.roi-foot{
+  margin-top:26px;padding-top:18px;border-top:1px solid var(--rule-soft);
+  font-size:.9rem;color:var(--ink-2);max-width:70ch;
+}
+
+.terms{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:clamp(20px,3vw,34px);margin-top:clamp(34px,4.5vw,50px);
+}
+.term{display:flex;flex-direction:column;gap:7px;border-left:2px solid var(--rule);padding-left:16px}
+.term h4{font-size:.97rem;font-weight:600}
+.term p{font-size:.9rem;color:var(--ink-2)}
+
+/* lead magnet slab */
+.magnet{
+  background:var(--slab);color:var(--on-slab);
+  border-radius:18px;
+  padding:clamp(28px,4vw,46px);
+  margin-block:clamp(34px,4.5vw,52px);
+  display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);
+  gap:clamp(24px,4vw,48px);align-items:center;
+}
+@media (max-width:780px){.magnet{grid-template-columns:1fr;gap:26px}}
+.magnet .eyebrow{color:var(--on-slab-2)}
+.magnet h3{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.08;letter-spacing:-.025em;
+  margin-block:10px 12px;
+}
+.magnet p{font-size:.98rem;color:var(--on-slab-2);line-height:1.6;max-width:52ch}
+.magnet-get{display:flex;flex-direction:column;gap:12px}
+.magnet-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.magnet-list li{
+  display:flex;gap:10px;align-items:flex-start;
+  font-size:.92rem;color:var(--on-slab);line-height:1.45;
+}
+.magnet-list li::before{
+  content:"";flex:none;width:6px;height:6px;border-radius:50%;
+  background:var(--on-slab-2);margin-top:8px;
+}
+.btn-slab{background:var(--on-slab);color:var(--slab);border-color:var(--on-slab);align-self:flex-start}
+.btn-slab:hover{background:#fff;border-color:#fff;color:var(--slab)}
+
+/* why it's a low-risk yes */
+.stack{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px 32px}
+.stack li{display:flex;gap:12px;align-items:flex-start;font-size:.94rem;color:var(--ink-2);line-height:1.55}
+.stack li b{color:var(--ink);font-weight:600}
+.stack-tick{
+  flex:none;width:18px;height:18px;margin-top:3px;color:var(--clay);
+}
+.stack-tick svg{width:100%;height:100%;display:block}
+.capacity{
+  margin-top:clamp(30px,4vw,44px);
+  display:flex;gap:14px;align-items:flex-start;
+  border-top:1px solid var(--rule);padding-top:20px;
+}
+.capacity-dot{
+  flex:none;width:9px;height:9px;border-radius:50%;background:var(--clay);margin-top:8px;
+  animation:blip 2.6s ease-in-out infinite;
+}
+@keyframes blip{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--clay) 55%,transparent)}70%{box-shadow:0 0 0 9px color-mix(in srgb,var(--clay) 0%,transparent)}}
+.capacity p{font-size:.93rem;color:var(--ink-2);max-width:66ch}
+.capacity b{color:var(--ink);font-weight:600}
+
+/* ---------- experience ---------- */
+.roles{display:flex;flex-direction:column}
+.role{
+  display:grid;grid-template-columns:minmax(0,1fr) 150px;
+  gap:8px 24px;align-items:baseline;
+  padding-block:22px;
+  border-top:1px solid var(--rule);
+}
+.role:last-child{border-bottom:1px solid var(--rule)}
+.role-head{display:flex;flex-direction:column;gap:3px}
+.role-title{font-size:1.12rem;font-weight:600;letter-spacing:-.012em}
+.role-org{font-size:.92rem;color:var(--clay-ink)}
+.role-when{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;
+  color:var(--ink-3);text-align:right;white-space:nowrap;
+}
+.role-note{grid-column:1/-1;font-size:.95rem;color:var(--ink-2);max-width:70ch;margin-top:4px}
+@media (max-width:640px){
+  .role{grid-template-columns:1fr}
+  .role-when{text-align:left}
+}
+
+/* ---------- leadership ---------- */
+.leads{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:2px 28px;margin-top:6px}
+.lead{
+  display:flex;justify-content:space-between;gap:16px;align-items:baseline;
+  padding-block:13px;border-bottom:1px solid var(--rule-soft);
+}
+.lead-role{font-size:.95rem}
+.lead-role b{font-weight:600}
+.lead-when{font-family:var(--mono);font-size:.7rem;color:var(--ink-3);white-space:nowrap}
+
+/* ---------- skills ---------- */
+.skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(26px,4vw,48px)}
+@media (max-width:760px){.skill-grid{grid-template-columns:1fr}}
+.skill-set{display:flex;flex-direction:column;gap:12px}
+.skill-set h3{
+  font-family:var(--mono);font-size:.72rem;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+  padding-bottom:10px;border-bottom:1px solid var(--rule);
+}
+.skill-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.skill-list li{
+  font-size:.95rem;color:var(--ink-2);
+  display:flex;gap:10px;align-items:baseline;
+}
+.skill-list li::before{
+  content:"";width:5px;height:5px;border-radius:50%;
+  background:var(--clay);flex:none;transform:translateY(-2px);
+}
+
+/* education */
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;margin-top:clamp(30px,4vw,44px)}
+.edu-block{display:flex;flex-direction:column;gap:7px;border-top:1px solid var(--rule);padding-top:14px}
+.edu-block h4{font-size:.95rem;font-weight:600}
+.edu-block p{font-size:.9rem;color:var(--ink-2)}
+
+/* ---------- voice agent ---------- */
+.agent{
+  margin-top:clamp(26px,4vw,40px);
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-radius:20px;
+  padding:clamp(22px,3.4vw,34px);
+  display:grid;grid-template-columns:auto minmax(0,1fr);
+  gap:clamp(18px,3vw,30px);
+}
+@media (max-width:640px){.agent{grid-template-columns:1fr;gap:18px}}
+
+/* orb */
+.orb{
+  position:relative;width:74px;height:74px;flex:none;
+  display:grid;place-items:center;
+}
+.orb-core{
+  width:34px;height:34px;border-radius:50%;
+  background:var(--clay);
+  transition:transform .3s cubic-bezier(.2,.7,.3,1);
+}
+.orb-ring{
+  position:absolute;inset:0;border-radius:50%;
+  border:1px solid var(--clay);opacity:.25;
+}
+.orb-ring.r2{inset:11px;opacity:.4}
+.agent[data-state="thinking"] .orb-ring{animation:orbPulse 1.7s ease-out infinite}
+.agent[data-state="thinking"] .orb-ring.r2{animation-delay:.5s}
+.agent[data-state="speaking"] .orb-core{animation:orbTalk 1.05s ease-in-out infinite}
+.agent[data-state="speaking"] .orb-ring{animation:orbPulse 1.15s ease-out infinite}
+.agent[data-state="speaking"] .orb-ring.r2{animation-delay:.35s}
+.agent[data-state="listening"] .orb-core{animation:orbTalk .7s ease-in-out infinite;background:var(--ink)}
+.agent[data-state="listening"] .orb-ring{animation:orbPulse .9s ease-out infinite}
+@keyframes orbPulse{0%{transform:scale(.72);opacity:.5}100%{transform:scale(1.18);opacity:0}}
+@keyframes orbTalk{0%,100%{transform:scale(1)}50%{transform:scale(1.28)}}
+
+.agent-main{display:flex;flex-direction:column;gap:14px;min-width:0}
+.agent-status{
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3);
+}
+.agent-answer{
+  font-size:1rem;line-height:1.6;color:var(--ink);
+  min-height:5.2em;white-space:pre-wrap;
+  max-width:60ch;
+}
+.agent-answer.muted{color:var(--ink-2)}
+.agent-chips{display:flex;flex-wrap:wrap;gap:7px}
+.qchip{
+  font-size:.8rem;font-family:var(--sans);
+  padding:6px 12px;border-radius:999px;
+  border:1px solid var(--rule);background:var(--ground);color:var(--ink-2);
+  cursor:pointer;transition:border-color .18s ease,color .18s ease;
+}
+.qchip:hover{border-color:var(--clay);color:var(--ink)}
+.agent-form{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.agent-input{
+  flex:1 1 220px;min-width:0;
+  font-family:var(--sans);font-size:.95rem;color:var(--ink);
+  background:var(--ground);
+  border:1px solid var(--rule);border-radius:999px;
+  padding:11px 18px;
+}
+.agent-input::placeholder{color:var(--ink-3)}
+.agent-input:focus{outline:2px solid var(--clay);outline-offset:1px;border-color:transparent}
+.icon-btn{
+  width:42px;height:42px;flex:none;
+  display:grid;place-items:center;
+  border-radius:50%;border:1px solid var(--rule);
+  background:var(--ground);color:var(--ink-2);cursor:pointer;
+  transition:border-color .18s ease,color .18s ease,background .18s ease;
+}
+.icon-btn:hover{border-color:var(--ink);color:var(--ink)}
+.icon-btn svg{width:19px;height:19px}
+.icon-btn[aria-pressed="true"]{background:var(--clay);border-color:var(--clay);color:var(--on-clay)}
+.icon-btn.rec{background:var(--clay);border-color:var(--clay);color:var(--on-clay)}
+.agent-foot{
+  display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;
+  font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;color:var(--ink-3);
+}
+.agent-foot button{
+  font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;
+  background:none;border:none;color:var(--clay-ink);cursor:pointer;padding:0;
+  text-decoration:underline;text-underline-offset:3px;
+}
+
+/* ---------- game ---------- */
+.game-shell{
+  margin-top:clamp(26px,4vw,40px);
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);
+  gap:clamp(22px,4vw,44px);align-items:start;
+}
+@media (max-width:820px){.game-shell{grid-template-columns:1fr}}
+.game-stage{
+  position:relative;
+  width:100%;max-width:540px;aspect-ratio:1/1;
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-radius:18px;
+  overflow:hidden;
+  touch-action:none;
+  cursor:crosshair;
+}
+#game{display:block;width:100%;height:100%}
+.g-overlay{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:12px;padding:28px;text-align:center;
+  background:color-mix(in srgb,var(--surface) 88%,transparent);
+  -webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);
+}
+.g-title{font-family:var(--serif);font-size:1.9rem;letter-spacing:-.025em;line-height:1}
+.g-sub{font-size:.88rem;color:var(--ink-2);max-width:34ch;line-height:1.5}
+.g-hint{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;color:var(--ink-3)}
+.g-side{display:flex;flex-direction:column;gap:18px}
+.g-hud{display:flex;flex-direction:column;gap:0}
+.g-stat{
+  display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+  padding-block:11px;border-bottom:1px solid var(--rule-soft);
+}
+.g-stat span{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.g-stat b{
+  font-family:var(--serif);font-weight:400;font-size:1.5rem;line-height:1;
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em;
+}
+.g-stat b.cap{font-family:var(--mono);font-size:.95rem;letter-spacing:.16em;color:var(--clay)}
+.g-rules{font-size:.88rem;color:var(--ink-2);line-height:1.55}
+.g-rules b{color:var(--ink);font-weight:600}
+
+/* ---------- contact ---------- */
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(26px,4vw,56px);align-items:start}
+@media (max-width:760px){.contact-grid{grid-template-columns:1fr}}
+.cline{
+  display:flex;align-items:baseline;justify-content:space-between;gap:18px;
+  padding-block:15px;border-bottom:1px solid var(--rule);
+  text-decoration:none;
+}
+.cline:first-of-type{border-top:1px solid var(--rule)}
+.clabel{font-family:var(--mono);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+.cval{font-size:.98rem;color:var(--ink);text-align:right;word-break:break-word}
+a.cline:hover .cval{color:var(--clay-ink)}
+
+.foot{
+  border-top:1px solid var(--rule);
+  padding-block:28px 40px;
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+  font-size:.82rem;color:var(--ink-3);
+}
+
+/* ---------- reveal (default state is VISIBLE) ---------- */
+.reveal.in{animation:rise .72s cubic-bezier(.16,.84,.32,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.001ms!important;
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="mark" href="#top"><span class="mark-dot"></span>Yohan Lewis</a>
+    <div class="nav-links">
+      <a href="#ask">Ask Justice</a>
+      <a href="#help">How I help</a>
+      <a href="#experience" data-opt>Experience</a>
+      <a href="#play">Play</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Cincinnati, Ohio</p>
+        <div class="name-line">
+          <h1 class="display">Yohan&nbsp;Lewis</h1>
+          <p class="deck">Founder of Lewis Automations. Sports Marketing and Finance student at Xavier University.</p>
+        </div>
+        <p class="lede prose">I build systems that do the work nobody remembers to do. I also sell, organize, and lead in the physical world &mdash; a ballpark concourse, a residence hall, a student senate floor. The two go together better than people expect.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#help">How I help businesses</a>
+          <a class="btn btn-ghost" href="mailto:lewisautomations@gmail.com">Get in touch</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/yohanlewis" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="orbit" id="orbit" data-photo="off">
+        <svg viewBox="0 0 240 240" role="presentation" aria-hidden="true">
+          <circle class="ring" cx="120" cy="120" r="106"/>
+          <circle class="ring dash" cx="120" cy="120" r="84"/>
+          <circle class="ring" cx="120" cy="120" r="62"/>
+          <circle class="halo" cx="120" cy="120" r="16"/>
+          <circle class="core" cx="120" cy="120" r="8.5"/>
+          <g class="spin s1"><circle class="dot" cx="120" cy="14" r="5"/></g>
+          <g class="spin s2"><circle class="dot alt" cx="120" cy="36" r="4.5"/></g>
+          <g class="spin s3"><circle class="dot" cx="120" cy="58" r="3.5"/></g>
+        </svg>
+        <img class="orbit-img" id="headshot" src="headshot.jpg" alt="Yohan Lewis">
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ STATS ============ -->
+  <section class="rule-top" style="padding-block:clamp(34px,5vw,52px)">
+    <div class="wrap stats reveal">
+      <div class="stat">
+        <span class="stat-num" data-to="32010" data-prefix="$">$32,010</span>
+        <span class="stat-lab">Raised in Reds 50/50 raffle sales, in under 40 games</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-to="40" data-suffix="+">40+</span>
+        <span class="stat-lab">Residents supported as a Resident Assistant</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-to="5">5</span>
+        <span class="stat-lab">Campus leadership roles held at once</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">2028</span>
+        <span class="stat-lab">Expected graduation, Xavier University</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VOICE AGENT ============ -->
+  <section id="ask" class="band rule-top">
+    <div class="wrap">
+      <div class="shead reveal" style="margin-bottom:0">
+        <p class="eyebrow">Meet Justice</p>
+        <h2 class="h2">Don&rsquo;t feel like reading? Ask Justice.</h2>
+        <p class="lede prose">Justice is the voice on this site. Talk to it or type at it. It knows my background, my business, what I build, how I price it, and what I&rsquo;m looking for, and it will read the answer back to you. If it doesn&rsquo;t know something, it says so instead of guessing.</p>
+      </div>
+
+      <div class="agent reveal" id="agent" data-state="idle">
+        <div class="orb" aria-hidden="true">
+          <span class="orb-ring"></span>
+          <span class="orb-ring r2"></span>
+          <span class="orb-core"></span>
+        </div>
+
+        <div class="agent-main">
+          <p class="agent-status" id="ag-status">Justice &middot; ready</p>
+          <div class="agent-answer muted" id="ag-answer" role="status" aria-live="polite">I&rsquo;m Justice. Ask me anything about Yohan &mdash; what he builds, what he&rsquo;s studying, what it would cost you, or whether he&rsquo;s the right person for something you have in mind.</div>
+
+          <div class="agent-chips" id="ag-chips">
+            <button class="qchip" type="button">What does Lewis Automations actually do?</button>
+            <button class="qchip" type="button">What would this cost me?</button>
+            <button class="qchip" type="button">Why should I hire Yohan as an intern?</button>
+            <button class="qchip" type="button">What has he actually built?</button>
+            <button class="qchip" type="button">How do I get the free audit?</button>
+          </div>
+
+          <form class="agent-form" id="ag-form">
+            <label class="skip" for="ag-input">Your question</label>
+            <input class="agent-input" id="ag-input" type="text" autocomplete="off"
+                   placeholder="Type a question, or press the microphone&hellip;">
+            <button class="icon-btn" id="ag-mic" type="button" title="Ask by voice" aria-label="Ask by voice">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="2.5" width="6" height="11" rx="3"/>
+                <path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3.5"/>
+              </svg>
+            </button>
+            <button class="icon-btn" id="ag-sound" type="button" aria-pressed="true" title="Read answers aloud" aria-label="Read answers aloud">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 9.5h3.5L12 5.5v13L7.5 14.5H4z"/>
+                <path d="M16 9a4.5 4.5 0 0 1 0 6"/><path d="M18.8 6.4a8 8 0 0 1 0 11.2"/>
+              </svg>
+            </button>
+            <button class="btn btn-primary" id="ag-send" type="submit">Ask</button>
+          </form>
+
+          <div class="agent-foot">
+            <span id="ag-note">Voice answers use your browser&rsquo;s speech.</span>
+            <button type="button" id="ag-stop" hidden>Stop</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AUTOMATIONS ============ -->
+  <section id="automations" class="band rule-top">
+    <div class="wrap">
+      <div class="shead reveal">
+        <p class="eyebrow">Lewis Automations LLC &middot; Founded 2026 &middot; <a class="tlink" href="https://lewisautomations.co" target="_blank" rel="noopener">lewisautomations.co</a></p>
+        <h2 class="h2">Most businesses don&rsquo;t lose work.<br>They lose the follow-up.</h2>
+        <p class="lede prose">A message comes in. Somebody is meant to answer it. They&rsquo;re busy, it waits, and by the time anyone looks the person has moved on. That failure is almost never a people problem. It&rsquo;s a system problem, and a system can fix it.</p>
+      </div>
+
+      <div class="build-grid reveal">
+        <article class="build">
+          <div class="build-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/>
+            </svg>
+          </div>
+          <h3>Answers in seconds</h3>
+          <p>Every inbound form, call, or message gets a real reply immediately. At two in the morning the same as two in the afternoon.</p>
+        </article>
+        <article class="build">
+          <div class="build-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 0 1 15.3-6.4L21 8"/><path d="M21 3v5h-5"/>
+              <path d="M21 12a9 9 0 0 1-15.3 6.4L3 16"/><path d="M3 21v-5h5"/>
+            </svg>
+          </div>
+          <h3>Follow-up that doesn&rsquo;t forget</h3>
+          <p>Sequences that keep going until someone books, replies, or opts out, then hand off cleanly to a human. Nothing depends on memory.</p>
+        </article>
+        <article class="build">
+          <div class="build-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>
+              <path d="M10 6.5h3.5a2 2 0 0 1 2 2V14"/><path d="M14 17.5h-3.5a2 2 0 0 1-2-2V10"/>
+            </svg>
+          </div>
+          <h3>Tools wired together</h3>
+          <p>The software a business already pays for, connected so information stops getting retyped from one screen into another.</p>
+        </article>
+      </div>
+
+      <div class="pipe-wrap reveal">
+        <p class="eyebrow">What actually happens</p>
+        <div class="pipe-box">
+        <span class="pipe-pulse" aria-hidden="true"></span>
+        <ol class="pipe">
+          <li class="pstep">
+            <span class="pnum">01</span>
+            <h4>Something comes in</h4>
+            <p>A form submission, a missed call, an email, a walk-in logged at the desk.</p>
+          </li>
+          <li class="pstep">
+            <span class="pnum">02</span>
+            <h4>The system reads it</h4>
+            <p>It pulls out what matters: who this is, what they want, how urgent it is.</p>
+          </li>
+          <li class="pstep">
+            <span class="pnum">03</span>
+            <h4>Action fires</h4>
+            <p>A reply goes out, a record is created, a booking link is sent, a reminder is queued.</p>
+          </li>
+          <li class="pstep">
+            <span class="pnum">04</span>
+            <h4>You hear about it</h4>
+            <p>Only when a person is genuinely needed. The rest is already handled.</p>
+          </li>
+        </ol>
+        </div>
+      </div>
+
+      <div class="note reveal">
+        <h3>How it actually gets built</h3>
+        <p>I built this stack myself, including the process I use to map an operation before I write a line of it. A discovery call gets captured and transcribed, the workflow gets drafted and checked against how the business really runs, and only then does anything get built. Everything sits on top of the software a company already pays for, so nothing has to be replaced and nobody has to relearn their job. If follow-up keeps slipping where you work, I&rsquo;d like to hear how it breaks.</p>
+        <div class="chips">
+          <span class="chip">n8n</span>
+          <span class="chip">Zapier</span>
+          <span class="chip">Twilio</span>
+          <span class="chip">Calendly</span>
+          <span class="chip">OpenAI API</span>
+          <span class="chip">Otter.ai</span>
+          <span class="chip">Webhooks &amp; REST</span>
+          <span class="chip">HTML / CSS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW I CAN HELP ============ -->
+  <section id="help" class="band rule-top">
+    <div class="wrap">
+      <div class="shead reveal">
+        <p class="eyebrow">How I can help</p>
+        <h2 class="h2">You&rsquo;re not short on leads.<br>You&rsquo;re short on what happens next.</h2>
+        <p class="lede prose">Every business already spends money to get someone&rsquo;s attention. Ads, referrals, signage, a rep walking through the door. The expensive part is done. What happens in the next five minutes decides whether that money turned into anything, and that part is fixable. Pick whichever of these sounds like your week.</p>
+      </div>
+
+      <p class="pull reveal">A lead that never gets answered <em>doesn&rsquo;t complain.</em> It just quietly goes somewhere else, and nothing in your reporting ever tells you it was there.</p>
+
+      <!-- lead magnet -->
+      <div class="magnet reveal">
+        <div>
+          <p class="eyebrow">Start here &middot; costs you nothing</p>
+          <h3>The Leak Audit</h3>
+          <p>One short call, then I trace exactly how an inquiry travels through your business today: who touches it, how long it waits, and where it dies. You get a written one-page map of every leak I find, with what each one is plausibly costing you. You keep it either way. If nothing needs fixing, I&rsquo;ll tell you that and we&rsquo;re done.</p>
+        </div>
+        <div class="magnet-get">
+          <ul class="magnet-list">
+            <li>A one-page map of your current follow-up path</li>
+            <li>The specific points where inquiries go cold</li>
+            <li>A rough dollar figure on what that gap costs</li>
+            <li>What I&rsquo;d build, and what I&rsquo;d leave alone</li>
+          </ul>
+          <a class="btn btn-slab" href="mailto:lewisautomations@gmail.com?subject=Free%20Leak%20Audit">Request the audit</a>
+        </div>
+      </div>
+
+      <!-- the menu -->
+      <div class="offer-grid reveal">
+        <article class="offer">
+          <span class="offer-tag">The problem</span>
+          <h3>Speed to first reply</h3>
+          <p>Someone reaches out and waits hours for an answer. By then they&rsquo;ve called two competitors. Every inbound message gets a real, useful reply in seconds, at 3am the same as 3pm, while they&rsquo;re still interested.</p>
+        </article>
+        <article class="offer">
+          <span class="offer-tag">The problem</span>
+          <h3>Follow-up that finishes</h3>
+          <p>One message goes out, nobody replies, and that&rsquo;s the end of it. Sequences keep going until the person books, answers, or opts out, then hand off to a human at the moment a human actually adds something.</p>
+        </article>
+        <article class="offer">
+          <span class="offer-tag">The problem</span>
+          <h3>Appointments that hold</h3>
+          <p>Booked slots quietly evaporate and the time is gone. Reminders go out before, and the second someone misses, a reschedule offer lands. A no-show becomes a rebooking instead of a hole in the day.</p>
+        </article>
+        <article class="offer">
+          <span class="offer-tag">The problem</span>
+          <h3>Old leads nobody works</h3>
+          <p>There&rsquo;s a list of people who went quiet and no one has time to call them. A reactivation campaign reopens those conversations with contacts you have already paid to acquire. This is usually the fastest money in the building.</p>
+        </article>
+        <article class="offer">
+          <span class="offer-tag">The problem</span>
+          <h3>The same data, typed three times</h3>
+          <p>Your team retypes a name into the booking tool, the spreadsheet, and the invoice. Intake, scheduling, records, and reporting move between systems on their own, and those hours go back to work that needs a person.</p>
+        </article>
+        <article class="offer">
+          <span class="offer-tag">The problem</span>
+          <h3>Reading and sorting eats the day</h3>
+          <p>Messages pile up and someone has to triage them. Requests get summarized, categorized, and routed automatically, with replies drafted and waiting for a human yes rather than a human blank page.</p>
+        </article>
+        <article class="offer">
+          <span class="offer-tag">The problem</span>
+          <h3>Automations that rot</h3>
+          <p>Systems break quietly when a business changes and nobody notices for a month. I monitor what I build, fix what breaks, and adjust it as you grow. That&rsquo;s what the ongoing fee covers.</p>
+        </article>
+        <article class="offer">
+          <span class="offer-tag">The problem</span>
+          <h3>Nobody knows the numbers</h3>
+          <p>You can feel that follow-up is slow but you can&rsquo;t prove it. Simple reporting on response time, contact rate, and bookings, so the thing you were guessing at becomes a number you can watch move.</p>
+        </article>
+      </div>
+
+      <!-- ROI -->
+      <div class="roi reveal">
+        <p class="eyebrow">Where the return actually comes from</p>
+        <div class="roi-grid">
+          <div class="roi-item">
+            <h4>Revenue you already bought</h4>
+            <p class="roi-eq">inquiries acquired &times; share never answered</p>
+            <p>You spent real money getting those people to raise their hand. Every one that goes cold writes that spend off.</p>
+          </div>
+          <div class="roi-item">
+            <h4>Hours handed back</h4>
+            <p class="roi-eq">manual tasks per week &times; hourly cost</p>
+            <p>Retyping, chasing, reminding. Work that has to happen and that nobody should be doing by hand.</p>
+          </div>
+          <div class="roi-item">
+            <h4>Slots that get kept</h4>
+            <p class="roi-eq">bookings &times; no-show rate &times; value</p>
+            <p>A reminder before and a reschedule offer after turn an empty slot back into a paid one.</p>
+          </div>
+          <div class="roi-item">
+            <h4>Capacity without hiring</h4>
+            <p class="roi-eq">more volume &divide; same headcount</p>
+            <p>The system absorbs growth at the staffing level you already have, which is the cheapest hire you&rsquo;ll ever make.</p>
+          </div>
+        </div>
+        <p class="roi-foot">I won&rsquo;t put invented percentages on this page. Those four lines are the only levers that matter, and the audit fills in your real numbers for each one before you spend anything. If the math doesn&rsquo;t clear the cost of the build, I&rsquo;ll say so.</p>
+      </div>
+
+      <!-- risk reversal -->
+      <div class="reveal" style="margin-top:clamp(42px,5.5vw,66px)">
+        <p class="eyebrow">Why this is a low-risk yes</p>
+        <ul class="stack">
+          <li>
+            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
+            <span><b>You see the plan before anything is built.</b> I map your process and write a blueprint of exactly what the system will do, step by step.</span>
+          </li>
+          <li>
+            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
+            <span><b>You approve it before I start.</b> Nothing gets built on an assumption I made in my head.</span>
+          </li>
+          <li>
+            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
+            <span><b>If the build doesn&rsquo;t do what the blueprint says, you don&rsquo;t pay the setup fee.</b> The standard is written down in advance, so neither of us has to argue about it later.</span>
+          </li>
+          <li>
+            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
+            <span><b>It runs on the tools you already pay for.</b> No migration, no ripping out software your team just learned.</span>
+          </li>
+          <li>
+            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
+            <span><b>Your staff&rsquo;s day doesn&rsquo;t change.</b> The system works underneath what they already do. It frees the team rather than replacing it.</span>
+          </li>
+          <li>
+            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
+            <span><b>Builds go live in weeks, not quarters.</b> You should be seeing it work while you still remember why you wanted it.</span>
+          </li>
+        </ul>
+
+        <div class="terms">
+          <div class="term">
+            <h4>One-time setup</h4>
+            <p>Charged when I design and build the system around your process. Quoted after the audit, so you know the number before you commit to anything.</p>
+          </div>
+          <div class="term">
+            <h4>Monthly or yearly management</h4>
+            <p>Covers monitoring, fixes, and improvements as the business changes. Cancel it and the system is still yours.</p>
+          </div>
+          <div class="term">
+            <h4>Nothing before the audit</h4>
+            <p>The map costs you nothing and carries no obligation. I&rsquo;d rather turn down a build I can&rsquo;t justify than sell you one.</p>
+          </div>
+        </div>
+
+        <div class="capacity">
+          <span class="capacity-dot" aria-hidden="true"></span>
+          <p><b>A note on availability.</b> I&rsquo;m a full-time student at Xavier, which means I take a small number of builds at a time on purpose. I would rather do three of these properly than ten of them badly. If I&rsquo;m full, I&rsquo;ll tell you that instead of taking your money and getting to it later.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="band rule-top">
+    <div class="wrap">
+      <div class="shead reveal">
+        <p class="eyebrow">Experience</p>
+        <h2 class="h2">Where I&rsquo;ve done the work</h2>
+      </div>
+
+      <div class="roles reveal">
+        <article class="role">
+          <div class="role-head">
+            <h3 class="role-title">Game Day Sales Intern</h3>
+            <p class="role-org">Cincinnati Reds &middot; Cincinnati, OH</p>
+          </div>
+          <p class="role-when">Mar 2026 &mdash; Present</p>
+          <p class="role-note">Sold $32,010 in 50/50 raffle tickets across fewer than 40 games, working the concourse and stands directly. Supported Reds Community Fund fundraising, the Redlegs Run, and youth baseball and softball camps.</p>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <h3 class="role-title">Founder</h3>
+            <p class="role-org">Lewis Automations LLC &middot; Cincinnati, OH</p>
+          </div>
+          <p class="role-when">2026 &mdash; Present</p>
+          <p class="role-note">Built the company&rsquo;s entire technical stack solo, from capture through automated response and booking. Handle prospecting, discovery calls, system design, and delivery myself.</p>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <h3 class="role-title">Resident Assistant</h3>
+            <p class="role-org">Xavier University &middot; Cincinnati, OH</p>
+          </div>
+          <p class="role-when">Aug 2025 &mdash; Feb 2026</p>
+          <p class="role-note">Responsible for a floor community of 40+ students. Designed and ran social and educational programming, mediated roommate conflicts, enforced policy, and assisted with crisis and emergency response alongside residence life staff.</p>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <h3 class="role-title">Athletic Director Intern</h3>
+            <p class="role-org">Cincinnati College Preparatory Academy &middot; Cincinnati, OH</p>
+          </div>
+          <p class="role-when">Sep 2025 &mdash; Jan 2026</p>
+          <p class="role-note">Managed athletic scheduling to remove conflicts and raise participation. Ran game-day logistics, staff coordination, and setup, and wrote step-by-step procedures that made execution consistent across events.</p>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <h3 class="role-title">Office Assistant</h3>
+            <p class="role-org">Xavier University, Office of Financial Aid &middot; Cincinnati, OH</p>
+          </div>
+          <p class="role-when">Sep 2024 &mdash; Feb 2026</p>
+          <p class="role-note">Front-line support for students and parents on aid policy, deadlines, and process. Handled confidential financial records under FERPA with accuracy and discretion.</p>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <h3 class="role-title">Cashier</h3>
+            <p class="role-org">Inflatable Playspaces &middot; Royal Oak, MI</p>
+          </div>
+          <p class="role-when">Aug 2022 &mdash; May 2024</p>
+          <p class="role-note">Register, payments, and inventory in a high-volume family venue. Planned and ran birthday parties and special events start to finish.</p>
+        </article>
+      </div>
+
+      <div style="margin-top:clamp(40px,5vw,60px)" class="reveal">
+        <p class="eyebrow" style="display:block;margin-bottom:6px">Campus leadership</p>
+        <div class="leads">
+          <div class="lead"><span class="lead-role"><b>President</b>, Black Student Association</span><span class="lead-when">Apr 2026 &rarr;</span></div>
+          <div class="lead"><span class="lead-role"><b>Senator</b>, Student Government Association</span><span class="lead-when">Jan 2026 &rarr;</span></div>
+          <div class="lead"><span class="lead-role"><b>Vice President</b>, Club Flag Football</span><span class="lead-when">Aug 2025 &rarr;</span></div>
+          <div class="lead"><span class="lead-role"><b>Member</b>, Alpha Alpha Alpha Honor Society</span><span class="lead-when">Oct 2025 &rarr;</span></div>
+          <div class="lead"><span class="lead-role"><b>Committee</b>, Antonio Johnson Scholarship Gala</span><span class="lead-when">Nov 2024 &rarr;</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="band rule-top">
+    <div class="wrap">
+      <div class="shead reveal">
+        <p class="eyebrow">Capabilities</p>
+        <h2 class="h2">What I&rsquo;m actually good at</h2>
+      </div>
+
+      <div class="skill-grid reveal">
+        <div class="skill-set">
+          <h3>Automation &amp; AI</h3>
+          <ul class="skill-list">
+            <li>Workflow design and build in n8n and Zapier</li>
+            <li>API and webhook integration between business tools</li>
+            <li>AI-assisted workflows and prompt design</li>
+            <li>Process mapping and requirements from a discovery call</li>
+            <li>SMS and voice routing with Twilio</li>
+            <li>Scheduling and booking automation</li>
+          </ul>
+        </div>
+
+        <div class="skill-set">
+          <h3>Business &amp; Finance</h3>
+          <ul class="skill-list">
+            <li>Financial accounting and business finance</li>
+            <li>Investment analysis and valuation</li>
+            <li>Discounted cash flow modeling in Excel</li>
+            <li>Budget building and expense tracking</li>
+            <li>Real estate investment screening</li>
+            <li>Organizational budget stewardship</li>
+          </ul>
+        </div>
+
+        <div class="skill-set">
+          <h3>Sales &amp; Communication</h3>
+          <ul class="skill-list">
+            <li>In-person prospecting and cold walk-ins</li>
+            <li>Discovery calls and needs assessment</li>
+            <li>Live event and floor sales</li>
+            <li>Public speaking and presentation</li>
+            <li>Persuasive and professional writing</li>
+            <li>Customer service under pressure</li>
+          </ul>
+        </div>
+
+        <div class="skill-set">
+          <h3>Leadership &amp; Operations</h3>
+          <ul class="skill-list">
+            <li>Leading a student organization as president</li>
+            <li>Event and game-day logistics management</li>
+            <li>Policy and standard procedure design</li>
+            <li>Conflict resolution and mediation</li>
+            <li>Crisis and emergency response support</li>
+            <li>Peer mentorship</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="edu reveal">
+        <div class="edu-block">
+          <h4>Xavier University</h4>
+          <p>B.S. Sports Marketing, minor in Finance. Expected May 2028.</p>
+        </div>
+        <div class="edu-block">
+          <h4>Finance coursework completed</h4>
+          <p>Financial Accounting &middot; Business Finance &middot; Investments</p>
+        </div>
+        <div class="edu-block">
+          <h4>Still ahead</h4>
+          <p>Mergers &amp; Acquisitions &middot; Real Estate Finance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GAME ============ -->
+  <section id="play" class="band rule-top">
+    <div class="wrap">
+      <div class="shead reveal">
+        <p class="eyebrow">Interlude</p>
+        <h2 class="h2">Bored of reading? Fine. Play something.</h2>
+        <p class="lede prose">This is the whole job as an arcade game. Messages are heading for the inbox. Keep them off it.</p>
+      </div>
+
+      <div class="game-shell">
+        <div class="game-stage" id="g-stage">
+          <canvas id="game" tabindex="0" aria-label="Auto-Reply, an arcade game. Move the pointer to swing a deflector around a central inbox and bounce incoming messages away."></canvas>
+          <div class="g-overlay" id="g-overlay">
+            <p class="g-title" id="g-otitle">Auto&#8209;Reply</p>
+            <p class="g-sub" id="g-osub">Messages fly at the inbox in the middle. Swing your handler around the ring and bounce every one of them away. Let three through and you&rsquo;re answering email by hand again.</p>
+            <button class="btn btn-primary" id="g-start" type="button">Start</button>
+            <p class="g-hint">Move the mouse or drag to aim &middot; Arrow keys work too</p>
+          </div>
+        </div>
+
+        <aside class="g-side">
+          <div class="g-hud">
+            <div class="g-stat"><span>Handled</span><b id="g-score">0</b></div>
+            <div class="g-stat"><span>Best</span><b id="g-best">0</b></div>
+            <div class="g-stat"><span>Capacity</span><b class="cap" id="g-lives">&#9679;&#9679;&#9679;</b></div>
+          </div>
+          <p class="g-rules">
+            <b>Grey messages</b> are routine. <b>Clay ones</b> are the priority leads, they move faster and count triple.
+            It speeds up the longer you last, which is a reasonably honest simulation of growth.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="band rule-top">
+    <div class="wrap contact-grid">
+      <div class="shead reveal" style="margin-bottom:0">
+        <p class="eyebrow">Contact</p>
+        <h2 class="h2">Let&rsquo;s talk.</h2>
+        <p class="lede prose">Hiring for a sports business or finance internship, running a company where follow-up keeps slipping, or just want to compare notes on building something while still in school. All three are welcome.</p>
+        <div class="btn-row" style="margin-top:8px">
+          <a class="btn btn-primary" href="mailto:lewisautomations@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="tel:+12487274906">Call</a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <a class="cline" href="mailto:lewisautomations@gmail.com">
+          <span class="clabel">Email</span><span class="cval">lewisautomations@gmail.com</span>
+        </a>
+        <a class="cline" href="tel:+12487274906">
+          <span class="clabel">Phone</span><span class="cval">(248) 727&#8209;4906</span>
+        </a>
+        <a class="cline" href="https://www.linkedin.com/in/yohanlewis" target="_blank" rel="noopener">
+          <span class="clabel">LinkedIn</span><span class="cval">in/yohanlewis</span>
+        </a>
+        <a class="cline" href="https://lewisautomations.co" target="_blank" rel="noopener">
+          <span class="clabel">Business</span><span class="cval">lewisautomations.co</span>
+        </a>
+        <div class="cline">
+          <span class="clabel">Based in</span><span class="cval">Cincinnati, Ohio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="foot">
+      <span>Yohan Lewis &middot; Founder, Lewis Automations LLC</span>
+      <span>Built by hand, like everything else here.</span>
+    </div>
+  </div>
+
+</main>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- headshot: show it only if the file actually loads ---------- */
+  var shot = document.getElementById("headshot");
+  var orbit = document.getElementById("orbit");
+  if (shot && orbit) {
+    var showShot = function(){
+      if (shot.naturalWidth > 1) orbit.setAttribute("data-photo", "on");
+    };
+    if (shot.complete) showShot();
+    shot.addEventListener("load", showShot);
+    shot.addEventListener("error", function(){ orbit.setAttribute("data-photo", "off"); });
+  }
+
+  /* ---------- reveal on scroll (resting state is already visible) ---------- */
+  if (!reduce && "IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.06 });
+    document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+  }
+
+  /* ---------- count-up stats ---------- */
+  function countUp(el){
+    var to = parseFloat(el.getAttribute("data-to"));
+    if (isNaN(to)) return;
+    var pre = el.getAttribute("data-prefix") || "";
+    var suf = el.getAttribute("data-suffix") || "";
+    var dur = 1250, t0 = null;
+    function frame(t){
+      if (t0 === null) t0 = t;
+      var p = Math.min(1, (t - t0) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = pre + Math.round(to * eased).toLocaleString("en-US") + suf;
+      if (p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  if (!reduce && "IntersectionObserver" in window) {
+    var io2 = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { countUp(e.target); io2.unobserve(e.target); }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll(".stat-num[data-to]").forEach(function(el){ io2.observe(el); });
+  }
+
+  /* =========================================================
+     AUTO-REPLY  â€”  deflect incoming messages away from the inbox
+     ========================================================= */
+  var cv = document.getElementById("game");
+  if (!cv) return;
+  var ctx = cv.getContext("2d");
+  var stage = document.getElementById("g-stage");
+  var overlay = document.getElementById("g-overlay");
+  var oTitle = document.getElementById("g-otitle");
+  var oSub = document.getElementById("g-osub");
+  var startBtn = document.getElementById("g-start");
+  var elScore = document.getElementById("g-score");
+  var elBest = document.getElementById("g-best");
+  var elLives = document.getElementById("g-lives");
+
+  var W = 0, H = 0, CX = 0, CY = 0, S = 0;
+  var HUB = 0, PR = 0, SPAWN = 0, PADW = 0;
+  var theme = {};
+
+  var state = "idle";
+  var dots = [], sparks = [];
+  var score = 0, lives = 3, best = 0;
+  var pAng = -Math.PI / 2, tAng = -Math.PI / 2;
+  var pHalf = 0.42;
+  var spawnTimer = 0, hubFlash = 0, lastT = 0, rafId = 0;
+  var keyL = false, keyR = false;
+
+  try { best = parseInt(localStorage.getItem("yl_autoreply_best") || "0", 10) || 0; } catch (err) { best = 0; }
+  elBest.textContent = best;
+
+  function readTheme(){
+    var cs = getComputedStyle(document.documentElement);
+    function v(n, fb){ var x = cs.getPropertyValue(n).trim(); return x || fb; }
+    theme = {
+      bg:    v("--surface", "#FAF9F5"),
+      ink:   v("--ink", "#191917"),
+      ink2:  v("--ink-2", "#57544C"),
+      ink3:  v("--ink-3", "#8B8779"),
+      rule:  v("--rule", "#D8D4C6"),
+      clay:  v("--clay", "#C15F3C")
+    };
+  }
+
+  function resize(){
+    var r = stage.getBoundingClientRect();
+    if (r.width < 2) return;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    cv.width  = Math.round(r.width * dpr);
+    cv.height = Math.round(r.height * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    W = r.width; H = r.height;
+    CX = W / 2; CY = H / 2;
+    S = Math.min(W, H);
+    HUB   = S * 0.082;
+    PR    = S * 0.345;
+    SPAWN = S * 0.545;
+    PADW  = Math.max(7, S * 0.026);
+    readTheme();
+    draw();
+  }
+
+  function angDiff(a, b){
+    var d = (a - b) % (Math.PI * 2);
+    if (d > Math.PI) d -= Math.PI * 2;
+    if (d < -Math.PI) d += Math.PI * 2;
+    return d;
+  }
+
+  function reset(){
+    dots = []; sparks = [];
+    score = 0; lives = 3;
+    spawnTimer = 0; hubFlash = 0;
+    pAng = tAng = -Math.PI / 2;
+    elScore.textContent = "0";
+    elLives.textContent = "â—â—â—";
+  }
+
+  function spawn(){
+    var priority = Math.random() < 0.2;
+    var base = S * (0.135 + Math.min(score, 90) * 0.0022);
+    dots.push({
+      ang: Math.random() * Math.PI * 2,
+      r: SPAWN,
+      prevR: SPAWN + 1,
+      sp: base * (priority ? 1.35 : 1) * (0.9 + Math.random() * 0.25),
+      spin: (Math.random() - 0.5) * 0.35,
+      pri: priority,
+      out: false,
+      trail: 0
+    });
+  }
+
+  function burst(x, y, color){
+    sparks.push({ x: x, y: y, r: S * 0.02, life: 1, color: color });
+  }
+
+  function setLives(){
+    var s = "";
+    for (var i = 0; i < 3; i++) s += (i < lives ? "â—" : "â—‹");
+    elLives.textContent = s;
+  }
+
+  function gameOver(){
+    state = "over";
+    if (score > best) {
+      best = score;
+      elBest.textContent = best;
+      try { localStorage.setItem("yl_autoreply_best", String(best)); } catch (err) {}
+    }
+    oTitle.textContent = "Inbox overflowed";
+    oSub.innerHTML = "You handled <b>" + score + "</b> message" + (score === 1 ? "" : "s") +
+      " before three got through. Best so far: <b>" + best + "</b>.";
+    startBtn.textContent = "Play again";
+    overlay.style.display = "";
+    cancelAnimationFrame(rafId);
+    draw();
+  }
+
+  function update(dt){
+    /* keyboard aim */
+    if (keyL) tAng -= 3.1 * dt;
+    if (keyR) tAng += 3.1 * dt;
+    /* smooth toward target */
+    pAng += angDiff(tAng, pAng) * Math.min(1, dt * 16);
+
+    /* spawn pacing */
+    spawnTimer -= dt;
+    if (spawnTimer <= 0) {
+      spawn();
+      var gap = Math.max(0.42, 1.05 - score * 0.012);
+      spawnTimer = gap * (0.75 + Math.random() * 0.5);
+    }
+
+    for (var i = dots.length - 1; i >= 0; i--) {
+      var d = dots[i];
+      d.prevR = d.r;
+      d.ang += d.spin * dt;
+      d.r += (d.out ? d.sp * 2.1 : -d.sp) * dt;
+      d.trail = Math.min(1, d.trail + dt * 4);
+
+      if (d.out) {
+        if (d.r > SPAWN + S * 0.35) dots.splice(i, 1);
+        continue;
+      }
+
+      /* crossed the deflector ring this frame? */
+      if (d.prevR > PR && d.r <= PR) {
+        if (Math.abs(angDiff(d.ang, pAng)) <= pHalf) {
+          d.out = true;
+          d.r = PR + 1;
+          score += d.pri ? 3 : 1;
+          elScore.textContent = score;
+          burst(CX + Math.cos(d.ang) * PR, CY + Math.sin(d.ang) * PR, d.pri ? theme.clay : theme.ink2);
+          continue;
+        }
+      }
+
+      if (d.r <= HUB + S * 0.012) {
+        dots.splice(i, 1);
+        lives--;
+        setLives();
+        hubFlash = 1;
+        if (lives <= 0) { gameOver(); return; }
+      }
+    }
+
+    for (var j = sparks.length - 1; j >= 0; j--) {
+      sparks[j].life -= dt * 2.4;
+      if (sparks[j].life <= 0) sparks.splice(j, 1);
+    }
+    if (hubFlash > 0) hubFlash = Math.max(0, hubFlash - dt * 2.2);
+  }
+
+  function draw(){
+    if (!W) return;
+    ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = theme.bg;
+    ctx.fillRect(0, 0, W, H);
+
+    /* spawn boundary */
+    ctx.save();
+    ctx.setLineDash([2, 8]);
+    ctx.strokeStyle = theme.ink3;
+    ctx.globalAlpha = 0.4;
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.arc(CX, CY, SPAWN, 0, Math.PI * 2); ctx.stroke();
+    ctx.restore();
+
+    /* deflector track */
+    ctx.save();
+    ctx.strokeStyle = theme.rule;
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.arc(CX, CY, PR, 0, Math.PI * 2); ctx.stroke();
+    ctx.restore();
+
+    /* hub */
+    ctx.save();
+    if (hubFlash > 0) {
+      ctx.globalAlpha = hubFlash * 0.5;
+      ctx.fillStyle = theme.clay;
+      ctx.beginPath(); ctx.arc(CX, CY, HUB + S * 0.07 * hubFlash, 0, Math.PI * 2); ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+    ctx.fillStyle = theme.ink;
+    ctx.beginPath(); ctx.arc(CX, CY, HUB, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = theme.clay;
+    ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(CX, CY, HUB + 5, 0, Math.PI * 2); ctx.stroke();
+    ctx.restore();
+
+    /* incoming */
+    for (var i = 0; i < dots.length; i++) {
+      var d = dots[i];
+      var x = CX + Math.cos(d.ang) * d.r;
+      var y = CY + Math.sin(d.ang) * d.r;
+      var rad = S * (d.pri ? 0.017 : 0.014);
+      var col = d.pri ? theme.clay : theme.ink2;
+
+      /* radial trail */
+      var tr = d.r + (d.out ? -1 : 1) * S * 0.05 * d.trail;
+      ctx.save();
+      ctx.globalAlpha = d.out ? 0.2 : 0.28;
+      ctx.strokeStyle = col;
+      ctx.lineWidth = rad * 0.9;
+      ctx.lineCap = "round";
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+      ctx.lineTo(CX + Math.cos(d.ang) * tr, CY + Math.sin(d.ang) * tr);
+      ctx.stroke();
+      ctx.restore();
+
+      ctx.save();
+      if (d.out) ctx.globalAlpha = 0.5;
+      ctx.fillStyle = col;
+      ctx.beginPath(); ctx.arc(x, y, rad, 0, Math.PI * 2); ctx.fill();
+      ctx.restore();
+    }
+
+    /* deflector paddle */
+    ctx.save();
+    ctx.strokeStyle = theme.clay;
+    ctx.lineWidth = PADW;
+    ctx.lineCap = "round";
+    ctx.beginPath();
+    ctx.arc(CX, CY, PR, pAng - pHalf, pAng + pHalf);
+    ctx.stroke();
+    ctx.restore();
+
+    /* deflection bursts */
+    for (var j = 0; j < sparks.length; j++) {
+      var sp = sparks[j];
+      ctx.save();
+      ctx.globalAlpha = Math.max(0, sp.life) * 0.8;
+      ctx.strokeStyle = sp.color;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(sp.x, sp.y, sp.r * (1.8 - sp.life), 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.restore();
+    }
+  }
+
+  function loop(t){
+    if (state !== "playing") return;
+    if (!lastT) lastT = t;
+    var dt = Math.min(0.05, (t - lastT) / 1000);
+    lastT = t;
+    update(dt);
+    if (state === "playing") { draw(); rafId = requestAnimationFrame(loop); }
+  }
+
+  function start(){
+    reset();
+    readTheme();
+    state = "playing";
+    overlay.style.display = "none";
+    lastT = 0;
+    cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(loop);
+    cv.focus({ preventScroll: true });
+  }
+
+  function aimFrom(clientX, clientY){
+    var r = stage.getBoundingClientRect();
+    tAng = Math.atan2(clientY - (r.top + r.height / 2), clientX - (r.left + r.width / 2));
+  }
+
+  startBtn.addEventListener("click", start);
+
+  stage.addEventListener("mousemove", function(e){ aimFrom(e.clientX, e.clientY); });
+  stage.addEventListener("touchstart", function(e){
+    if (e.touches[0]) aimFrom(e.touches[0].clientX, e.touches[0].clientY);
+  }, { passive: true });
+  stage.addEventListener("touchmove", function(e){
+    if (state === "playing") e.preventDefault();
+    if (e.touches[0]) aimFrom(e.touches[0].clientX, e.touches[0].clientY);
+  }, { passive: false });
+
+  cv.addEventListener("keydown", function(e){
+    if (e.key === "ArrowLeft") { keyL = true; e.preventDefault(); }
+    if (e.key === "ArrowRight") { keyR = true; e.preventDefault(); }
+    if ((e.key === "Enter" || e.key === " ") && state !== "playing") { start(); e.preventDefault(); }
+  });
+  cv.addEventListener("keyup", function(e){
+    if (e.key === "ArrowLeft") keyL = false;
+    if (e.key === "ArrowRight") keyR = false;
+  });
+  cv.addEventListener("blur", function(){ keyL = keyR = false; });
+
+  document.addEventListener("visibilitychange", function(){
+    if (document.hidden && state === "playing") {
+      state = "paused";
+      cancelAnimationFrame(rafId);
+      oTitle.textContent = "Paused";
+      oSub.textContent = "You switched away. Pick it back up whenever.";
+      startBtn.textContent = "Resume";
+      overlay.style.display = "";
+      startBtn.onclick = function(){
+        startBtn.onclick = null;
+        startBtn.addEventListener("click", start);
+        state = "playing";
+        overlay.style.display = "none";
+        lastT = 0;
+        rafId = requestAnimationFrame(loop);
+      };
+    }
+  });
+
+  if (window.ResizeObserver) {
+    new ResizeObserver(resize).observe(stage);
+  } else {
+    window.addEventListener("resize", resize);
+  }
+  if (window.matchMedia) {
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    if (mq.addEventListener) mq.addEventListener("change", function(){ readTheme(); draw(); });
+  }
+  resize();
+  setTimeout(resize, 400);
+})();
+</script>
+
+<script>
+/* =========================================================
+   VOICE AGENT  â€”  ask anything about Yohan and his business
+   ========================================================= */
+(function(){
+  "use strict";
+
+  var agent   = document.getElementById("agent");
+  if (!agent) return;
+  var statusEl = document.getElementById("ag-status");
+  var answerEl = document.getElementById("ag-answer");
+  var form    = document.getElementById("ag-form");
+  var input   = document.getElementById("ag-input");
+  var micBtn  = document.getElementById("ag-mic");
+  var sndBtn  = document.getElementById("ag-sound");
+  var sendBtn = document.getElementById("ag-send");
+  var stopBtn = document.getElementById("ag-stop");
+  var noteEl  = document.getElementById("ag-note");
+  var chips   = document.getElementById("ag-chips");
+
+  var EMAIL = "lewisautomations@gmail.com";
+  var READY = "Justice Â· ready";
+
+  /* ---------- the facts ---------- */
+  var FACTS = [
+    "WHO HE IS: Yohan Lewis. Lives in Cincinnati, Ohio. Founder of Lewis Automations LLC. Full-time student at Xavier University studying for a Bachelor of Science in Sports Marketing with a minor in Finance, expected to graduate May 2028. Reach him at " + EMAIL + ", by phone at (248) 727-4906, on LinkedIn at linkedin.com/in/yohanlewis, or through lewisautomations.co.",
+    "THE BUSINESS: Lewis Automations LLC, founded 2026, founder-run and early stage. He builds custom automation and AI workflow systems for businesses so that follow-up never depends on a person remembering to do it. He built the entire technical stack himself, self-taught. His tools are n8n, Zapier, Twilio, Calendly, the OpenAI API, Otter.ai, and general webhook and REST integration.",
+    "WHAT HE BUILDS: Instant first replies to any inbound message within seconds, day or night. Follow-up sequences that continue until the person books, replies, or opts out, then hand off to a human. Appointment reminders and no-show recovery that turns a missed slot into a rebooking. Reactivation campaigns that reopen conversations with old leads a business already paid to acquire. Back-office automation so intake, scheduling, records, and reporting move between systems without anyone retyping. AI-assisted triage that summarizes, categorizes, and routes requests and drafts replies for a human to approve. Simple reporting on response time, contact rate, and bookings. Ongoing monitoring so the system does not quietly rot.",
+    "HOW A BUILD WORKS: First a free Leak Audit. One short call, then he traces how an inquiry travels through the business today and writes a one-page map of where it stalls and what that gap plausibly costs. The map is free and the client keeps it whether or not they hire him. If a build makes sense, he writes a blueprint of exactly what the system will do. The client approves the blueprint before he builds anything. He builds it, the client tests and approves it, it goes live, and he monitors and maintains it afterward.",
+    "PRICING AND GUARANTEE: A one-time setup fee charged when he designs and builds the system, quoted after the audit so the client knows the number before committing. Then a monthly or yearly management fee covering monitoring, fixes, and improvements. If the finished build does not do what the approved blueprint says, the client does not pay the setup fee. The audit itself is free with no obligation. Cancel the management fee and the system is still theirs. He has no fixed public price list because every build is quoted after the audit.",
+    "WHY IT PAYS: Four levers. Revenue already bought, meaning inquiries a business paid to acquire that never get answered. Hours handed back, meaning manual tasks per week times hourly cost. Slots that get kept, meaning bookings times no-show rate times value. Capacity without hiring, meaning more volume at the same headcount. He deliberately does not publish invented percentages. The audit fills in the client's real numbers, and if the math does not clear the cost of the build he says so.",
+    "IF ASKED ABOUT CLIENTS, RESULTS, OR PROOF: Lewis Automations does not have published client case studies, testimonials, or revenue figures. Never invent any. If someone asks for proof or references, say plainly that there are no published case studies to share, and that the free Leak Audit is how they can see exactly how he works at no cost and no obligation. He works with service businesses across industries rather than one fixed niche. He takes a small number of builds at a time on purpose, because he is a full-time student.",
+    "JOB EXPERIENCE: Game Day Sales Intern at the Cincinnati Reds, March 2026 to present. He sold $32,010 worth of 50/50 raffle tickets in under 40 games, working the concourse and stands in person, and supported Reds Community Fund fundraising, the Redlegs Run, and youth baseball and softball camps. Resident Assistant at Xavier University, August 2025 to February 2026, responsible for a floor community of more than 40 students, running programming, mediating conflicts, enforcing policy, and assisting with crisis response. Athletic Director Intern at Cincinnati College Preparatory Academy, September 2025 to January 2026, managing athletic scheduling, game-day logistics, staff coordination, and writing the procedures that made events run consistently. Office Assistant at the Xavier University Office of Financial Aid, September 2024 to February 2026, handling confidential student financial records under FERPA and answering student and parent questions. Cashier at Inflatable Playspaces in Royal Oak, Michigan, August 2022 to May 2024, running register and inventory and planning birthday parties and events.",
+    "CAMPUS LEADERSHIP: President of the Black Student Association since April 2026, and previously its treasurer. Senator in the Student Government Association since January 2026. Vice President of Club Flag Football since August 2025. Member of the Alpha Alpha Alpha honor society since October 2025. Committee member for the Antonio Johnson Scholarship Gala since November 2024.",
+    "SKILLS: Automation and AI, including workflow design in n8n and Zapier, API and webhook integration, AI-assisted workflows and prompt design, process mapping from a discovery call, SMS and voice routing with Twilio, and scheduling automation. Business and finance, including financial accounting, business finance, investments, discounted cash flow modeling in Excel, budgeting and expense tracking, real estate investment screening, and organizational budget stewardship. Sales and communication, including in-person prospecting and cold walk-ins, discovery calls, live event sales, public speaking, persuasive writing, and customer service under pressure. Leadership and operations, including leading a student organization as president, event and game-day logistics, policy and procedure design, conflict resolution, crisis response support, and peer mentorship.",
+    "COURSEWORK: Finance classes completed are Financial Accounting, Business Finance, and Investments. Still ahead are Mergers and Acquisitions and Real Estate Finance.",
+    "WHAT HE WANTS: Internships in sports business and finance. Clients whose follow-up keeps slipping. And conversations with people building something while still in school. He is genuinely interested in hearing how follow-up breaks inside a real business, whether or not it turns into work."
+  ].join("\n\n");
+
+  var INSTRUCTIONS =
+    "You are Justice, the voice assistant on Yohan Lewis's personal website. Visitors ask you about him and about his company, Lewis Automations. Answer only from the facts below.\n\n" +
+    "HOW TO ANSWER\n" +
+    "- Your name is Justice. If someone asks who you are, say you are Justice, the assistant on Yohan's site, and that you can answer questions about him and his work.\n" +
+    "- Two to four short spoken sentences unless the visitor asks for more detail. Your answer is read aloud, so write plain sentences a person would say.\n" +
+    "- No markdown, no bullet points, no headings, no emoji, no numbered lists.\n" +
+    "- Call him Yohan. He uses he and him.\n" +
+    "- Never invent numbers, clients, testimonials, results, prices, or dates. If asked for case studies or references, say plainly that the company is early stage and does not have them yet.\n" +
+    "- Be warm, direct, and grounded. Calm, never rushed. No hype words, no sales language, no exclamation marks.\n" +
+    "- If someone asks about hiring him or wants to work together, answer honestly and point them to the free Leak Audit and " + EMAIL + ".\n\n" +
+    "ALWAYS BE USEFUL. Never stonewall a visitor.\n" +
+    "- If someone is unsure what to ask, or says something vague like hello, help, or I don't know, give them a short friendly steer: offer two or three specific things you can tell them about, such as what Yohan builds, what it costs, or his background.\n" +
+    "- If someone asks a general question that is not specifically about Yohan, such as what automation means, what a CRM is, how a booking system works, what n8n or Zapier do, or whether automation would suit their type of business, just answer it plainly and briefly in your own words, then connect it back to how Yohan works if that is relevant. These are fair questions from someone who is unsure, and answering them is your job.\n" +
+    "- If someone describes their own business or problem and asks whether Yohan could help, reason it through with them honestly using what you know about what he builds. If it is a fit, say so and point them to the audit. If it is genuinely not, say that too.\n" +
+    "- The one thing you must not do is invent facts about Yohan. If a question needs a specific detail about him that is not in the facts below, say you are not sure of that one and suggest emailing " + EMAIL + ", then offer what you do know that is close.\n" +
+    "- Only decline a question if it is unrelated to Yohan, his work, or business in general, or if answering would be inappropriate.\n\n" +
+    "FACTS ABOUT YOHAN\n\n" + FACTS;
+
+  /* ---------- offline knowledge base (used when Claude isn't available) ---------- */
+  var KB = [
+    { k:["what does lewis automations","what is lewis automations","what do you do","what does he do","about the business","the company"],
+      a:"Lewis Automations builds custom automation systems so a business never loses work to slow follow-up. Every inbound message gets an answer in seconds, follow-up continues until the person books or opts out, and the tools a company already pays for get wired together. Yohan founded it in 2026 and built the whole stack himself." },
+    { k:["cost","price","pricing","how much","charge","fee","expensive","budget"],
+      a:"There's a one-time setup fee when he designs and builds the system, then a monthly or yearly management fee for monitoring and improvements. He quotes the number after the free audit, so you know it before you commit to anything. The audit itself costs nothing." },
+    { k:["audit","free","leak","get started","start","first step","next step"],
+      a:"Start with the free Leak Audit. One short call, then he traces how an inquiry actually travels through your business and writes you a one-page map of where it stalls and what that's costing. You keep the map whether or not you hire him. Email " + EMAIL + " to ask for it." },
+    { k:["guarantee","risk","refund","what if it doesn't work","promise"],
+      a:"You approve a written blueprint before he builds anything, and if the finished build doesn't do what that blueprint says, you don't pay the setup fee. The standard is agreed in advance so nobody has to argue about it later. The audit before all of that is free and carries no obligation." },
+    { k:["hire","intern","internship","recruit","job","candidate","why should"],
+      a:"He sold $32,010 in raffle tickets for the Cincinnati Reds in under 40 games, ran a residence hall floor of over 40 students, and built a software company from nothing while carrying a full course load. He's a Sports Marketing major with a Finance minor at Xavier, graduating May 2028. Email " + EMAIL + " to talk." },
+    { k:["reds","cincinnati reds","baseball","raffle","50/50","sports"],
+      a:"He's a Game Day Sales Intern with the Cincinnati Reds, starting March 2026. He sold $32,010 in 50/50 raffle tickets in under 40 games, working the concourse in person, and supported Reds Community Fund events including the Redlegs Run and youth camps." },
+    { k:["study","studying","school","college","university","major","xavier","degree","graduate","education"],
+      a:"He's at Xavier University in Cincinnati, studying for a Bachelor of Science in Sports Marketing with a minor in Finance. He expects to graduate in May 2028. He's finished Financial Accounting, Business Finance, and Investments, with Mergers and Acquisitions and Real Estate Finance still ahead." },
+    { k:["built","build","stack","tools","tech","software","n8n","zapier","twilio","technical","technology"],
+      a:"He works in n8n and Zapier for workflow logic, Twilio for messaging and voice, Calendly for booking, and the OpenAI API for the AI parts, plus general webhook and REST integration. He built the entire stack himself, self-taught. Systems run on top of the software a business already pays for, so nothing gets replaced." },
+    { k:["client","clients","case study","results","testimonial","proof","reference","track record"],
+      a:"There aren't published case studies or testimonials to point you to. What he can offer instead is the free Leak Audit, which costs you nothing and shows you exactly how he works on your own process. You'll know what you'd be buying before you buy anything." },
+    { k:["industry","industries","niche","who do you serve","what kind of business","type of business","sector"],
+      a:"Service businesses generally, rather than one fixed niche. If people contact you, book time with you, and someone has to follow up, the same problem shows up regardless of the industry. Tell him what you run and he'll say honestly whether it fits." },
+    { k:["what is automation","how does automation","explain automation","automation mean","workflow mean"],
+      a:"Automation just means a series of steps that runs by itself when something happens. Someone fills in your form, and instead of waiting for a person to notice, the system replies, logs it, and books them in. Yohan designs those steps around how your business already works." },
+    { k:["leadership","president","bsa","black student association","senator","student government","club","organization","flag football","honor"],
+      a:"He's President of the Black Student Association at Xavier and previously its treasurer. He also serves as a Student Government Association senator, Vice President of Club Flag Football, a member of the Alpha Alpha Alpha honor society, and a committee member for the Antonio Johnson Scholarship Gala." },
+    { k:["skill","skills","good at","strength","capable","expertise"],
+      a:"Four areas. Automation and AI, meaning workflow design, API integration, and process mapping. Business and finance, including accounting, investments, and cash flow modeling. Sales and communication, including in-person prospecting and public speaking. And leadership and operations, from running a student organization to game-day logistics." },
+    { k:["contact","email","reach","phone","call","linkedin","get in touch","talk to"],
+      a:"Email " + EMAIL + ", or call 248 727 4906. He's on LinkedIn at linkedin dot com slash in slash yohanlewis, and the business site is lewisautomations dot co." },
+    { k:["roi","return","worth it","payback","save money","make money","value"],
+      a:"Four levers. Inquiries you already paid to acquire that never get answered. Hours your team spends on work nobody should do by hand. Booked slots that vanish to no-shows. And absorbing more volume without hiring. He won't put invented percentages on it. The audit fills in your real numbers first." },
+    { k:["resident assistant","ra","residence","dorm","housing"],
+      a:"He was a Resident Assistant at Xavier from August 2025 to February 2026, responsible for a floor community of more than 40 students. He ran programming, mediated roommate conflicts, enforced policy, and assisted with crisis and emergency response." },
+    { k:["available","availability","capacity","busy","take on","booked","time"],
+      a:"He takes a small number of builds at a time on purpose, because he's a full-time student. He'd rather do three properly than ten badly. If he's full he'll tell you that instead of taking your money and getting to it later." },
+    { k:["who are you","your name","what are you","justice"],
+      a:"I'm Justice, the assistant on Yohan's site. I can tell you about his background, his company Lewis Automations, what he builds, how he prices it, and what he's looking for. Ask me anything and I'll read the answer back to you." },
+    { k:["who is","tell me about","yohan","background","about him","introduce"],
+      a:"Yohan Lewis is a Sports Marketing and Finance student at Xavier University in Cincinnati, and the founder of Lewis Automations. He builds automation systems for businesses, sells for the Cincinnati Reds on game days, and leads the Black Student Association on campus. He graduates in May 2028." }
+  ];
+  var FALLBACK = "I'm not certain about that one, and I'd rather not guess. I can tell you what Yohan builds, what it would cost you, how the free audit works, or about his background and experience. Or email him directly at " + EMAIL + " and he'll answer it himself.";
+
+  function localAnswer(q){
+    var s = " " + String(q).toLowerCase() + " ";
+    var best = null, bestScore = 0;
+    for (var i = 0; i < KB.length; i++) {
+      var score = 0;
+      for (var j = 0; j < KB[i].k.length; j++) {
+        if (s.indexOf(KB[i].k[j]) !== -1) score += KB[i].k[j].length;
+      }
+      if (score > bestScore) { bestScore = score; best = KB[i]; }
+    }
+    return (best && bestScore >= 3) ? best.a : FALLBACK;
+  }
+
+  /* ---------- speech out ---------- */
+  var synth = window.speechSynthesis || null;
+  var voice = null, soundOn = true, speaking = false;
+
+  function pickVoice(){
+    if (!synth) return null;
+    var vs = synth.getVoices() || [];
+    if (!vs.length) return null;
+    var en = vs.filter(function(v){ return /^en[-_]?/i.test(v.lang || ""); });
+    var pool = en.length ? en : vs;
+    var prefs = ["samantha","ava","serena","allison","zoe","aria","jenny","sonia","libby",
+                 "google uk english female","google us english","microsoft aria","microsoft jenny",
+                 "karen","moira","tessa","fiona","victoria","joanna","nicky","catherine"];
+    for (var i = 0; i < prefs.length; i++) {
+      for (var j = 0; j < pool.length; j++) {
+        if ((pool[j].name || "").toLowerCase().indexOf(prefs[i]) !== -1) return pool[j];
+      }
+    }
+    for (var k = 0; k < pool.length; k++) { if (pool[k].localService) return pool[k]; }
+    return pool[0];
+  }
+  if (synth) {
+    voice = pickVoice();
+    if (typeof synth.addEventListener === "function") {
+      synth.addEventListener("voiceschanged", function(){ voice = pickVoice(); });
+    }
+  }
+
+  function chunkText(t){
+    var parts = String(t).replace(/\s+/g, " ").match(/[^.!?]+[.!?]*\s*/g) || [String(t)];
+    var out = [], buf = "";
+    for (var i = 0; i < parts.length; i++) {
+      if ((buf + parts[i]).length > 180 && buf) { out.push(buf.trim()); buf = ""; }
+      buf += parts[i];
+    }
+    if (buf.trim()) out.push(buf.trim());
+    return out;
+  }
+
+  function stopSpeech(){
+    speaking = false;
+    if (synth) { try { synth.cancel(); } catch (e) {} }
+  }
+
+  /* Browsers want a user gesture before any speech. The answer arrives seconds
+     after the click, by which point that gesture has expired â€” so we open the
+     channel with a silent utterance while the click is still fresh. */
+  var primed = false;
+  function primeSpeech(){
+    if (primed || !synth) return;
+    primed = true;
+    try {
+      var u = new SpeechSynthesisUtterance(" ");
+      u.volume = 0; u.rate = 2;
+      synth.speak(u);
+    } catch (e) {}
+  }
+
+  function speak(text){
+    if (!synth || !soundOn || !text) { setState("idle"); statusEl.textContent = READY; return; }
+    stopSpeech();
+    try { synth.resume(); } catch (e) {}
+    var chunks = chunkText(text);
+    if (!chunks.length) { setState("idle"); return; }
+    speaking = true;
+    setState("speaking");
+    statusEl.textContent = "Speaking";
+    stopBtn.hidden = false;
+    var done = 0;
+    chunks.forEach(function(c){
+      var u = new SpeechSynthesisUtterance(c);
+      if (voice) { u.voice = voice; u.lang = voice.lang || "en-US"; }
+      u.rate = 0.94; u.pitch = 1.0; u.volume = 1;
+      u.onend = function(){
+        done++;
+        if (done >= chunks.length && speaking) {
+          speaking = false; setState("idle");
+          statusEl.textContent = READY; stopBtn.hidden = true;
+        }
+      };
+      u.onerror = function(){
+        speaking = false; setState("idle");
+        statusEl.textContent = READY; stopBtn.hidden = true;
+      };
+      try { synth.speak(u); } catch (e) {}
+    });
+  }
+
+  /* ---------- state ---------- */
+  function setState(s){ agent.setAttribute("data-state", s); }
+
+  function finish(text){
+    answerEl.classList.remove("muted");
+    answerEl.textContent = text;
+    speak(text);
+    if (!soundOn || !synth) { setState("idle"); statusEl.textContent = READY; stopBtn.hidden = true; }
+  }
+
+  /* ---------- Claude, when the page is published as an Artifact ---------- */
+  var sampleFn = null, turns = [], ctl = null;
+  if (window.claude && typeof window.claude.use === "function") {
+    try {
+      window.claude.use("sample").then(function(s){
+        if (s) {
+          sampleFn = s;
+          noteEl.textContent = "Answers come from Claude, on your own account.";
+        }
+      })["catch"](function(){});
+    } catch (e) {}
+  }
+
+  var PERMANENT = ["not_granted","sampling_disabled","not_declared","capability_disabled","capability_removed","tools_unavailable"];
+
+  function ask(q){
+    q = String(q || "").trim();
+    if (!q) return;
+    primeSpeech();
+    stopSpeech();
+    input.value = "";
+    sendBtn.disabled = true;
+    setState("thinking");
+    statusEl.textContent = "Thinking";
+    answerEl.classList.add("muted");
+    answerEl.textContent = "â€¦";
+
+    if (!sampleFn) { sendBtn.disabled = false; finish(localAnswer(q)); return; }
+
+    ctl = new AbortController();
+    stopBtn.hidden = false;
+    var msgs = [{ role: "user", content: INSTRUCTIONS }]
+      .concat(turns.slice(-6))
+      .concat([{ role: "user", content: q }]);
+
+    sampleFn(msgs, {
+      modelTier: "quick",
+      cache: false,
+      signal: ctl.signal,
+      onText: function(u){
+        answerEl.classList.remove("muted");
+        answerEl.textContent = u.text;
+        statusEl.textContent = "Answering";
+      }
+    }).then(function(res){
+      sendBtn.disabled = false;
+      stopBtn.hidden = true;
+      turns.push({ role: "user", content: q });
+      turns.push({ role: "assistant", content: res.text });
+      if (turns.length > 8) turns = turns.slice(-8);
+      finish(res.text);
+    })["catch"](function(e){
+      sendBtn.disabled = false;
+      stopBtn.hidden = true;
+      var code = e && e.code;
+      if (code === "cancelled") { setState("idle"); statusEl.textContent = "Stopped"; return; }
+      if (PERMANENT.indexOf(code) !== -1) {
+        sampleFn = null;
+        noteEl.textContent = "Voice answers use your browserâ€™s speech.";
+        finish(localAnswer(q));
+        return;
+      }
+      if (code === "rate_limited") {
+        finish("That's a few too many questions at once for Claude right now. Give it a minute, or email " + EMAIL + ".");
+        return;
+      }
+      finish(localAnswer(q));
+    });
+  }
+
+  /* ---------- speech in ---------- */
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var rec = null, listening = false;
+  if (SR) {
+    rec = new SR();
+    rec.lang = "en-US";
+    rec.interimResults = true;
+    rec.maxAlternatives = 1;
+    rec.continuous = false;
+
+    rec.onstart = function(){
+      listening = true;
+      micBtn.classList.add("rec");
+      setState("listening");
+      statusEl.textContent = "Listening";
+    };
+    rec.onresult = function(ev){
+      var txt = "";
+      for (var i = 0; i < ev.results.length; i++) txt += ev.results[i][0].transcript;
+      input.value = txt;
+      if (ev.results[ev.results.length - 1].isFinal) { rec.stop(); ask(txt); }
+    };
+    rec.onerror = function(ev){
+      listening = false;
+      micBtn.classList.remove("rec");
+      setState("idle");
+      statusEl.textContent = (ev && ev.error === "not-allowed")
+        ? "Microphone blocked â€” type instead"
+        : "Didnâ€™t catch that â€” try again";
+    };
+    rec.onend = function(){
+      listening = false;
+      micBtn.classList.remove("rec");
+      if (agent.getAttribute("data-state") === "listening") {
+        setState("idle");
+        if (statusEl.textContent === "Listening") statusEl.textContent = READY;
+      }
+    };
+
+    micBtn.addEventListener("click", function(){
+      if (listening) { rec.stop(); return; }
+      primeSpeech();
+      stopSpeech();
+      try { rec.start(); } catch (e) {
+        setState("idle");
+        statusEl.textContent = "Microphone unavailable â€” type instead";
+      }
+    });
+  } else {
+    micBtn.hidden = true;
+    noteEl.textContent = "Your browser canâ€™t do voice input â€” typing works.";
+  }
+
+  /* ---------- controls ---------- */
+  form.addEventListener("submit", function(e){ e.preventDefault(); ask(input.value); });
+
+  chips.addEventListener("click", function(e){
+    var b = e.target.closest(".qchip");
+    if (b) ask(b.textContent);
+  });
+
+  sndBtn.addEventListener("click", function(){
+    soundOn = !soundOn;
+    sndBtn.setAttribute("aria-pressed", soundOn ? "true" : "false");
+    sndBtn.title = soundOn ? "Read answers aloud" : "Answers stay silent";
+    if (!soundOn) { stopSpeech(); setState("idle"); statusEl.textContent = READY; stopBtn.hidden = true; }
+  });
+
+  stopBtn.addEventListener("click", function(){
+    if (ctl) { try { ctl.abort(); } catch (e) {} }
+    stopSpeech();
+    setState("idle");
+    statusEl.textContent = "Stopped";
+    stopBtn.hidden = true;
+    sendBtn.disabled = false;
+  });
+
+  if (!synth) {
+    sndBtn.hidden = true;
+    noteEl.textContent = "Your browser canâ€™t read answers aloud â€” theyâ€™ll appear as text.";
+  }
+
+  window.addEventListener("beforeunload", stopSpeech);
+})();
+</script>
+
+</body>
+</html>

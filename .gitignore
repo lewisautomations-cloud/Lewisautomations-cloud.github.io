@@ -1,0 +1,24 @@
+# Windows / OneDrive cruft
+desktop.ini
+Thumbs.db
+.DS_Store
+$RECYCLE.BIN/
+
+# Office lock files and scratch
+~$*
+*.tmp
+*.bak
+
+# Coursework never belongs in this repo.
+# This folder sits inside a OneDrive full of assignments and financial aid
+# records. If one ever gets copied in here by accident, git will skip it.
+# Need to commit one deliberately? git add -f <file>
+*.docx
+*.xlsx
+*.pptx
+Recordings/
+Attachments/
+
+# Local notes
+.env
+*.local

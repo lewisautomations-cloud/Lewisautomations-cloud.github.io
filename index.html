@@ -698,6 +698,52 @@ a.cline:hover .cval{color:var(--clay-ink)}
   font-size:.82rem;color:var(--ink-3);
 }
 
+/* ---------- photo gallery ---------- */
+.gfilters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(18px,2.6vw,26px)}
+.gfilter{
+  font-family:var(--sans);font-size:.82rem;
+  padding:7px 14px;border-radius:999px;
+  border:1px solid var(--rule);background:var(--ground);color:var(--ink-2);
+  cursor:pointer;transition:border-color .18s ease,color .18s ease,background .18s ease;
+}
+.gfilter:hover{border-color:var(--clay);color:var(--ink)}
+.gfilter.is-on{background:var(--clay);border-color:var(--clay);color:var(--on-clay)}
+.gallery{display:grid;gap:clamp(12px,1.6vw,18px);grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.gitem{margin:0;display:flex;flex-direction:column;gap:9px}
+.gshot{
+  display:block;width:100%;padding:0;line-height:0;cursor:zoom-in;
+  border:1px solid var(--rule);border-radius:10px;overflow:hidden;
+  background:var(--surface-2);transition:border-color .2s ease;
+}
+.gshot:hover{border-color:var(--clay)}
+.gshot:focus-visible{outline:2px solid var(--clay);outline-offset:3px}
+.gshot img{
+  width:100%;aspect-ratio:4/3;object-fit:cover;display:block;
+  transition:transform .45s cubic-bezier(.16,.84,.32,1);
+}
+.gshot:hover img{transform:scale(1.03)}
+.gcap{margin:0;font-size:.85rem;color:var(--ink-2);line-height:1.45}
+.lb{
+  position:fixed;inset:0;z-index:90;background:rgba(12,12,10,.93);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:16px;padding:clamp(16px,4vw,48px);
+}
+.lb img{
+  max-width:min(1100px,92vw);max-height:76vh;width:auto;height:auto;
+  border-radius:8px;box-shadow:0 30px 80px -30px rgba(0,0,0,.85);
+}
+.lb-cap{margin:0;color:#EDEAE0;font-family:var(--sans);font-size:.9rem;text-align:center;max-width:60ch}
+.lb-btn{
+  position:absolute;width:44px;height:44px;border-radius:999px;
+  background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.3);color:#fff;
+  font-size:1.35rem;line-height:1;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+}
+.lb-btn:hover{background:rgba(0,0,0,.8);border-color:#fff}
+.lb-close{top:clamp(12px,3vw,26px);right:clamp(12px,3vw,26px)}
+.lb-prev{left:clamp(8px,2vw,24px);top:50%;transform:translateY(-50%)}
+.lb-next{right:clamp(8px,2vw,24px);top:50%;transform:translateY(-50%)}
+
 /* ---------- reveal (default state is VISIBLE) ---------- */
 .reveal.in{animation:rise .72s cubic-bezier(.16,.84,.32,1) both}
 @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
@@ -720,6 +766,7 @@ a.cline:hover .cval{color:var(--clay-ink)}
     <div class="nav-links">
       <a href="#ask">Ask Justice</a>
       <a href="#experience" data-opt>Experience</a>
+      <a href="#photos" data-opt>Photos</a>
       <a href="#play">Play</a>
       <a href="#contact">Contact</a>
     </div>
@@ -916,6 +963,65 @@ a.cline:hover .cval{color:var(--clay-ink)}
     </div>
   </section>
 
+  <!-- ============ PHOTOS ============ -->
+  <section id="photos" class="band rule-top">
+    <div class="wrap">
+      <div class="shead reveal">
+        <p class="eyebrow">Photos</p>
+        <h2 class="h2">The work, in the places it happened</h2>
+      </div>
+
+      <div class="reveal">
+        <div class="gfilters" role="group" aria-label="Filter photos">
+          <button class="gfilter is-on" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="gfilter" type="button" data-filter="reds" aria-pressed="false">Cincinnati Reds</button>
+          <button class="gfilter" type="button" data-filter="gala" aria-pressed="false">Scholarship Gala</button>
+        </div>
+
+        <div class="gallery" id="gallery">
+          <figure class="gitem" data-cat="reds">
+            <button class="gshot" type="button" aria-label="Enlarge: Selling 50/50 raffle tickets on the concourse at Great American Ball Park">
+              <img src="photos/reds-concourse.jpg" width="1400" height="1050" loading="lazy" alt="Yohan in a Reds 50/50 raffle shirt on the concourse at Great American Ball Park with a group of fans">
+            </button>
+            <figcaption class="gcap">Selling 50/50 raffle tickets on the concourse at Great American Ball Park.</figcaption>
+          </figure>
+          <figure class="gitem" data-cat="reds">
+            <button class="gshot" type="button" aria-label="Enlarge: Before gates. The 50/50 raffle benefits the Reds Community Fund">
+              <img src="photos/reds-community-fund.jpg" width="1050" height="1400" loading="lazy" alt="Yohan in a 50/50 raffle shirt in front of a Reds Community Fund sign, with the empty ballpark behind him" style="object-position:50% 26%">
+            </button>
+            <figcaption class="gcap">Before gates. The 50/50 raffle benefits the Reds Community Fund.</figcaption>
+          </figure>
+          <figure class="gitem" data-cat="reds">
+            <button class="gshot" type="button" aria-label="Enlarge: Field level at Great American Ball Park before a game">
+              <img src="photos/reds-field.jpg" width="1400" height="1050" loading="lazy" alt="Yohan standing on the warning track at Great American Ball Park in front of the outfield">
+            </button>
+            <figcaption class="gcap">Field level at Great American Ball Park before a game.</figcaption>
+          </figure>
+          <figure class="gitem" data-cat="gala">
+            <button class="gshot" type="button" aria-label="Enlarge: Speaking at the Antonio Johnson Scholarship Gala">
+              <img src="photos/gala-speaking.jpg" width="567" height="423" loading="lazy" alt="Yohan speaking into a microphone at a podium at the Antonio Johnson Scholarship Gala">
+            </button>
+            <figcaption class="gcap">Speaking at the Antonio Johnson Scholarship Gala.</figcaption>
+          </figure>
+          <figure class="gitem" data-cat="gala">
+            <button class="gshot" type="button" aria-label="Enlarge: The Antonio Johnson Scholarship Gala, at Cincinnati Union Terminal">
+              <img src="photos/gala-group.jpg" width="1400" height="933" loading="lazy" alt="Yohan with three others in formal wear at the Antonio Johnson Scholarship Gala, held at Cincinnati Union Terminal">
+            </button>
+            <figcaption class="gcap">The Antonio Johnson Scholarship Gala, at Cincinnati Union Terminal.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lb" id="lightbox" hidden>
+    <button class="lb-btn lb-close" id="lb-close" type="button" aria-label="Close">&times;</button>
+    <button class="lb-btn lb-prev" id="lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <button class="lb-btn lb-next" id="lb-next" type="button" aria-label="Next photo">&#8250;</button>
+    <img id="lb-img" src="" alt="">
+    <p class="lb-cap" id="lb-cap"></p>
+  </div>
+
   <!-- ============ SKILLS ============ -->
   <section id="skills" class="band rule-top">
     <div class="wrap">
@@ -1081,6 +1187,77 @@ a.cline:hover .cval{color:var(--clay-ink)}
     shot.addEventListener("load", showShot);
     shot.addEventListener("error", function(){ orbit.setAttribute("data-photo", "off"); });
   }
+
+  /* ---------- photo gallery: filter + lightbox ---------- */
+  (function(){
+    var grid = document.getElementById("gallery");
+    var lb = document.getElementById("lightbox");
+    if (!grid || !lb) return;
+
+    var items = [].slice.call(grid.querySelectorAll(".gitem"));
+    var filters = [].slice.call(document.querySelectorAll(".gfilter"));
+    var lbImg = document.getElementById("lb-img");
+    var lbCap = document.getElementById("lb-cap");
+    var shown = items.slice();
+    var idx = -1;
+
+    function filter(cat){
+      shown = [];
+      items.forEach(function(it){
+        var on = (cat === "all" || it.getAttribute("data-cat") === cat);
+        it.hidden = !on;
+        if (on) shown.push(it);
+      });
+      filters.forEach(function(b){
+        var on = b.getAttribute("data-filter") === cat;
+        b.classList.toggle("is-on", on);
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+    }
+
+    function open(i){
+      if (!shown.length) return;
+      idx = (i + shown.length) % shown.length;
+      var it = shown[idx];
+      var img = it.querySelector("img");
+      lbImg.src = img.getAttribute("src");
+      lbImg.alt = img.getAttribute("alt") || "";
+      lbCap.textContent = it.querySelector(".gcap").textContent;
+      lb.hidden = false;
+      document.body.style.overflow = "hidden";
+      document.getElementById("lb-close").focus();
+    }
+
+    function close(){
+      lb.hidden = true;
+      lbImg.src = "";
+      document.body.style.overflow = "";
+    }
+
+    items.forEach(function(it){
+      it.querySelector(".gshot").addEventListener("click", function(){
+        open(shown.indexOf(it));
+      });
+    });
+
+    filters.forEach(function(b){
+      b.addEventListener("click", function(){ filter(b.getAttribute("data-filter")); });
+    });
+
+    document.getElementById("lb-close").addEventListener("click", close);
+    document.getElementById("lb-prev").addEventListener("click", function(){ open(idx - 1); });
+    document.getElementById("lb-next").addEventListener("click", function(){ open(idx + 1); });
+    lb.addEventListener("click", function(e){ if (e.target === lb) close(); });
+
+    document.addEventListener("keydown", function(e){
+      if (lb.hidden) return;
+      if (e.key === "Escape") close();
+      else if (e.key === "ArrowRight") open(idx + 1);
+      else if (e.key === "ArrowLeft") open(idx - 1);
+    });
+
+    filter("all");
+  })();
 
   /* ---------- reveal on scroll (resting state is already visible) ---------- */
   if (!reduce && "IntersectionObserver" in window) {

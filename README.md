@@ -1,6 +1,6 @@
 # Yohan Lewis — personal site
 
-**Live at [lewisautomations-cloud.github.io](https://lewisautomations-cloud.github.io/)** — that is the
+**Live at [yohanlewis.org](https://yohanlewis.org/)** — that is the
 link to share. It is served by GitHub Pages from `index.html` on the `main` branch of this repo.
 
 Everything for the site lives in this folder. `index.html` is the whole thing: styles, scripts,
@@ -18,8 +18,9 @@ git push
 
 GitHub Pages rebuilds on its own and the live site updates about a minute later.
 
-`lewisautomations.co` does not point here yet. To move it, add a `CNAME` file containing the domain
-and set the matching DNS records at your registrar.
+The custom domain is set by the `CNAME` file. DNS for `yohanlewis.org` lives at Squarespace: four A
+records on `@` pointing to GitHub Pages (185.199.108–111.153) and a `www` CNAME to
+`lewisautomations-cloud.github.io`. Don't delete the `CNAME` file or the domain stops working.
 
 ## Running it on your own machine
 
@@ -81,12 +82,11 @@ real commitment. Make sure you still mean it.
 1. Hero with your name and the orbiting mark
 2. Stats
 3. Justice
-4. Lewis Automations
-5. How I can help, the free Leak Audit, and the ROI section
-6. Experience and campus leadership
-7. Skills and education
-8. Auto-Reply, the game
-9. Contact
+4. Experience, campus leadership, recognition, and the endorsement quote
+5. Photos
+6. Skills and education
+7. Auto-Reply, the game
+8. Contact
 
 Colors and fonts are defined once as CSS variables at the very top of the `<style>` block. Change
 `--clay` to recolor every accent on the page at once.

@@ -588,7 +588,7 @@ a.cline:hover .cval{color:var(--clay-ink)}
       <div class="shead reveal" style="margin-bottom:0">
         <p class="eyebrow">Meet Justice</p>
         <h2 class="h2">Don&rsquo;t feel like reading? Ask Justice.</h2>
-        <p class="lede prose">Justice is the voice on this site. Talk to it or type at it. It knows my experience, my leadership, my coursework, and what I&rsquo;m looking for, and it will read the answer back to you. If it doesn&rsquo;t know something, it says so instead of guessing.</p>
+        <p class="lede prose">Justice is the voice on this site. Talk to it or type at it. It knows my experience, my leadership, and what I&rsquo;m looking for, and it will read the answer back to you. If it doesn&rsquo;t know something, it says so instead of guessing.</p>
       </div>
 
       <div class="agent reveal" id="agent" data-state="idle">
@@ -786,14 +786,6 @@ a.cline:hover .cval{color:var(--clay-ink)}
         <div class="edu-block">
           <h4>Xavier University</h4>
           <p>B.S. Sports Marketing, minor in Finance. Expected May 2028.</p>
-        </div>
-        <div class="edu-block">
-          <h4>Finance coursework completed</h4>
-          <p>Financial Accounting &middot; Business Finance &middot; Investments</p>
-        </div>
-        <div class="edu-block">
-          <h4>Still ahead</h4>
-          <p>Mergers &amp; Acquisitions &middot; Real Estate Finance</p>
         </div>
         <div class="edu-block">
           <h4>Beyond the classroom</h4>
@@ -1301,7 +1293,6 @@ a.cline:hover .cval{color:var(--clay-ink)}
     "CAMPUS LEADERSHIP: President of the Black Student Association since April 2026. As president he led the BSA Welcome Back Cookout to help students find a sense of belonging. Before that he was BSA treasurer from April 2025 to April 2026, managing a $17,000 annual budget including financial planning and expense tracking. Mentor in the TRIO First Steps Bridge program for incoming students. Senator in the Student Government Association since January 2026. Vice President of Club Flag Football since August 2025. Member of the Alpha Alpha Alpha honor society since October 2025. Committee member for the Antonio Johnson Scholarship Gala from November 2024 to February 2026, managing a $20,000 event budget with the team. In total he has managed about $37,000 in student-organization budgets.",
     "RECOGNITION AND BACKGROUND: First-generation college student and participant in Xavier's THR1VE Center and TRIO Student Support Services programs. Received the TRIO Freshman of the Year and Sophomore of the Year awards. Studied abroad in Peru. Does community service in Cincinnati and Detroit. Dr. Daniel McSpadden, Assistant Vice President for Ignatian Belonging at Xavier, who has worked with him through THR1VE and TRIO, describes him as intelligent with excellent communication skills and clear, concise writing, a role model his peers and mentees look up to, and a person of great resilience and commitment to service. Do not invent any other quotes or references.",
     "SKILLS: Automation and AI, self-taught, including workflow design in n8n and Zapier, API and webhook integration, AI-assisted workflows and prompt design, process mapping from a discovery call, SMS and voice routing with Twilio, and scheduling automation. Business and finance, including financial accounting, business finance, investments, discounted cash flow modeling in Excel, budgeting and expense tracking, real estate investment screening, and managing about $37,000 in student-organization budgets. Sales and communication, including in-person prospecting and cold walk-ins, discovery calls, relationship-driven game-day sales, public speaking, persuasive writing, and customer service under pressure. Leadership and operations, including leading a student organization as president, organizing large campus events, event and game-day logistics, policy and procedure design, conflict resolution, crisis response support, and peer mentorship.",
-    "COURSEWORK: Finance classes completed are Financial Accounting, Business Finance, and Investments. Still ahead are Mergers and Acquisitions and Real Estate Finance.",
     "WHAT HE WANTS: Internships in sports business and finance, and conversations with people who work in those fields."
   ].join("\n\n");
 
@@ -1330,7 +1321,7 @@ a.cline:hover .cval{color:var(--clay-ink)}
     { k:["reds","cincinnati reds","baseball","raffle","50/50","sports"],
       a:"He was a Game Day Sales Intern with the Cincinnati Reds from March to September 2026. He drove over $44,070 in game-day revenue through relationship-building and in-person selling, beating his transaction and engagement targets, and supported Reds Community Fund events including the Redlegs Run and youth camps." },
     { k:["study","studying","school","college","university","major","xavier","degree","graduate","education"],
-      a:"He's at Xavier University in Cincinnati, studying for a Bachelor of Science in Sports Marketing with a minor in Finance. He expects to graduate in May 2028. He's finished Financial Accounting, Business Finance, and Investments, with Mergers and Acquisitions and Real Estate Finance still ahead." },
+      a:"He's at Xavier University in Cincinnati, studying for a Bachelor of Science in Sports Marketing with a minor in Finance. He expects to graduate in May 2028." },
     { k:["built","build","stack","tools","tech","software","n8n","zapier","twilio","technical","technology"],
       a:"Alongside sales and finance, he's self-taught in automation. He builds workflows in n8n and Zapier, connects tools through APIs and webhooks, and has worked with Twilio and the OpenAI API." },
     { k:["leadership","led on campus","campus","lead","president","bsa","black student association","senator","student government","club","organization","flag football","honor"],
@@ -1352,7 +1343,7 @@ a.cline:hover .cval{color:var(--clay-ink)}
     { k:["who is","tell me about","yohan","background","about him","introduce"],
       a:"Yohan Lewis is a Sports Marketing and Finance student at Xavier University in Cincinnati. He drove over $44,000 in game-day revenue for the Cincinnati Reds, and leads the Black Student Association on campus. He graduates in May 2028." }
   ];
-  var FALLBACK = "I'm not certain about that one, and I'd rather not guess. I can tell you about his Reds internship, his campus leadership, his coursework, or what he's looking for. Or email him directly at " + EMAIL + " and he'll answer it himself.";
+  var FALLBACK = "I'm not certain about that one, and I'd rather not guess. I can tell you about his Reds internship, his campus leadership, his degree, or what he's looking for. Or email him directly at " + EMAIL + " and he'll answer it himself.";
 
   function localAnswer(q){
     var s = " " + String(q).toLowerCase() + " ";

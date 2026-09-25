@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Yohan Lewis - founder of Lewis Automations and Sports Marketing and Finance student at Xavier University. AI automation systems that make sure follow-up never depends on someone remembering.">
+<meta name="description" content="Yohan Lewis - Sports Marketing and Finance student at Xavier University. Drove $44,000+ in game-day revenue for the Cincinnati Reds, managed $37,000 in student-organization budgets, and leads the Black Student Association.">
 <meta name="author" content="Yohan Lewis">
 <meta name="theme-color" content="#F0EEE6">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23F0EEE6'/><circle cx='16' cy='16' r='10.5' fill='none' stroke='%23C15F3C' stroke-width='1.4'/><circle cx='16' cy='16' r='4.5' fill='%23C15F3C'/><circle cx='16' cy='5.5' r='2.2' fill='%23191917'/></svg>">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yohan Lewis">
-<meta property="og:description" content="Yohan Lewis - founder of Lewis Automations and Sports Marketing and Finance student at Xavier University. AI automation systems that make sure follow-up never depends on someone remembering.">
+<meta property="og:description" content="Yohan Lewis - Sports Marketing and Finance student at Xavier University. Drove $44,000+ in game-day revenue for the Cincinnati Reds, managed $37,000 in student-organization budgets, and leads the Black Student Association.">
 <style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Yohan Lewis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -273,109 +273,7 @@ a{color:inherit}
 /* ---------- section head ---------- */
 .shead{display:flex;flex-direction:column;gap:14px;margin-bottom:clamp(30px,4.5vw,52px)}
 
-/* ---------- automations ---------- */
-.build-grid{
-  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:clamp(16px,2.4vw,26px);
-}
-@media (max-width:820px){.build-grid{grid-template-columns:1fr}}
-.build{
-  background:var(--surface);
-  border:1px solid var(--rule-soft);
-  border-radius:14px;
-  padding:24px 22px 26px;
-  display:flex;flex-direction:column;gap:10px;
-  transition:transform .22s cubic-bezier(.2,.7,.3,1),border-color .22s ease;
-}
-.build:hover{transform:translateY(-3px);border-color:var(--rule)}
-.build h3{font-size:1.05rem;font-weight:600;letter-spacing:-.01em}
-.build p{font-size:.94rem;color:var(--ink-2)}
-.build-icon{
-  width:26px;height:26px;color:var(--clay);
-}
-.build-icon svg{width:100%;height:100%;display:block}
-
-/* pipeline */
-.pipe-wrap{margin-top:clamp(38px,5vw,60px)}
-.pipe-box{position:relative;margin-top:22px}
-.pipe{
-  list-style:none;margin:0;padding:0;
-  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:20px;position:relative;
-}
-.pipe::before{
-  content:"";position:absolute;
-  left:12%;right:12%;top:11px;height:1px;
-  background:var(--rule);
-}
-.pipe-pulse{
-  position:absolute;top:6px;left:12%;
-  width:11px;height:11px;border-radius:50%;
-  background:var(--clay);
-  box-shadow:0 0 0 4px color-mix(in srgb,var(--clay) 20%,transparent);
-  animation:travel 8s cubic-bezier(.65,0,.35,1) infinite;
-}
-@keyframes travel{
-  0%{left:12%;opacity:0}
-  6%{opacity:1}
-  22%{left:12%}
-  33%{left:37.3%}
-  47%{left:37.3%}
-  58%{left:62.6%}
-  72%{left:62.6%}
-  83%{left:88%}
-  94%{left:88%;opacity:1}
-  100%{left:88%;opacity:0}
-}
-.pstep{display:flex;flex-direction:column;gap:9px;position:relative;padding-top:34px}
-.pstep::before{
-  content:"";position:absolute;top:6px;left:0;
-  width:11px;height:11px;border-radius:50%;
-  background:var(--ground);border:1px solid var(--ink-3);
-  animation:lightup 8s ease-in-out infinite;
-}
-.pstep:nth-child(1)::before{animation-delay:0s}
-.pstep:nth-child(2)::before{animation-delay:2s}
-.pstep:nth-child(3)::before{animation-delay:4s}
-.pstep:nth-child(4)::before{animation-delay:6s}
-@keyframes lightup{
-  0%,4%{background:var(--ground);border-color:var(--ink-3)}
-  8%,22%{background:var(--clay);border-color:var(--clay)}
-  30%,100%{background:var(--ground);border-color:var(--ink-3)}
-}
-.pnum{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--ink-3)}
-.pstep h4{font-size:.98rem;font-weight:600;letter-spacing:-.008em}
-.pstep p{font-size:.88rem;color:var(--ink-2);line-height:1.5}
-@media (max-width:760px){
-  .pipe{grid-template-columns:1fr;gap:24px}
-  .pipe::before{left:5px;right:auto;top:6px;bottom:6px;width:1px;height:auto}
-  .pipe-pulse{display:none}
-  .pstep{padding-top:0;padding-left:26px}
-  .pstep::before{top:5px}
-}
-
-/* status note */
-.note{
-  margin-top:clamp(38px,5vw,58px);
-  background:var(--clay-wash);
-  border-left:2px solid var(--clay);
-  border-radius:0 12px 12px 0;
-  padding:22px 24px;
-  display:flex;flex-direction:column;gap:9px;
-}
-.note h3{font-size:.95rem;font-weight:600;letter-spacing:-.008em}
-.note p{font-size:.95rem;color:var(--ink-2);max-width:64ch}
-
-/* stack chips */
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
-.chip{
-  font-family:var(--mono);font-size:.74rem;letter-spacing:.02em;
-  padding:6px 11px;border-radius:7px;
-  border:1px solid var(--rule);color:var(--ink-2);
-  background:var(--surface);
-}
-
-/* ---------- how I can help ---------- */
+/* ---------- endorsement ---------- */
 .pull{
   margin:clamp(30px,4vw,44px) 0 clamp(34px,4.5vw,50px);
   padding-left:clamp(18px,3vw,28px);
@@ -390,110 +288,6 @@ a{color:inherit}
 .endorse .pull{margin:0 0 14px;max-width:none}
 .endorse figcaption{font-size:.85rem;color:var(--ink-3);padding-left:clamp(18px,3vw,28px)}
 .endorse figcaption b{color:var(--ink-2);font-weight:600}
-
-.offer-grid{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));
-  gap:clamp(20px,3vw,34px);
-}
-.offer{
-  display:flex;flex-direction:column;gap:8px;
-  border-top:2px solid var(--rule);
-  padding-top:16px;
-  transition:border-color .22s ease;
-}
-.offer:hover{border-top-color:var(--clay)}
-.offer h3{font-size:1.06rem;font-weight:600;letter-spacing:-.012em}
-.offer p{font-size:.93rem;color:var(--ink-2)}
-.offer-tag{
-  font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--ink-3);
-}
-.offer-tag.hot{color:var(--clay-ink)}
-
-.roi{
-  margin-top:clamp(42px,5.5vw,66px);
-  background:var(--surface);
-  border:1px solid var(--rule-soft);
-  border-radius:16px;
-  padding:clamp(24px,3.4vw,38px);
-}
-.roi-grid{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-  gap:clamp(20px,3vw,32px);margin-top:22px;
-}
-.roi-item{display:flex;flex-direction:column;gap:8px}
-.roi-item h4{font-size:.98rem;font-weight:600;letter-spacing:-.01em}
-.roi-eq{
-  font-family:var(--mono);font-size:.72rem;line-height:1.5;
-  color:var(--clay-ink);
-  background:var(--clay-wash);
-  border-radius:6px;padding:6px 9px;
-  align-self:flex-start;max-width:100%;
-}
-.roi-item p{font-size:.9rem;color:var(--ink-2);line-height:1.55}
-.roi-foot{
-  margin-top:26px;padding-top:18px;border-top:1px solid var(--rule-soft);
-  font-size:.9rem;color:var(--ink-2);max-width:70ch;
-}
-
-.terms{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:clamp(20px,3vw,34px);margin-top:clamp(34px,4.5vw,50px);
-}
-.term{display:flex;flex-direction:column;gap:7px;border-left:2px solid var(--rule);padding-left:16px}
-.term h4{font-size:.97rem;font-weight:600}
-.term p{font-size:.9rem;color:var(--ink-2)}
-
-/* lead magnet slab */
-.magnet{
-  background:var(--slab);color:var(--on-slab);
-  border-radius:18px;
-  padding:clamp(28px,4vw,46px);
-  margin-block:clamp(34px,4.5vw,52px);
-  display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);
-  gap:clamp(24px,4vw,48px);align-items:center;
-}
-@media (max-width:780px){.magnet{grid-template-columns:1fr;gap:26px}}
-.magnet .eyebrow{color:var(--on-slab-2)}
-.magnet h3{
-  font-family:var(--serif);font-weight:400;
-  font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.08;letter-spacing:-.025em;
-  margin-block:10px 12px;
-}
-.magnet p{font-size:.98rem;color:var(--on-slab-2);line-height:1.6;max-width:52ch}
-.magnet-get{display:flex;flex-direction:column;gap:12px}
-.magnet-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
-.magnet-list li{
-  display:flex;gap:10px;align-items:flex-start;
-  font-size:.92rem;color:var(--on-slab);line-height:1.45;
-}
-.magnet-list li::before{
-  content:"";flex:none;width:6px;height:6px;border-radius:50%;
-  background:var(--on-slab-2);margin-top:8px;
-}
-.btn-slab{background:var(--on-slab);color:var(--slab);border-color:var(--on-slab);align-self:flex-start}
-.btn-slab:hover{background:#fff;border-color:#fff;color:var(--slab)}
-
-/* why it's a low-risk yes */
-.stack{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px 32px}
-.stack li{display:flex;gap:12px;align-items:flex-start;font-size:.94rem;color:var(--ink-2);line-height:1.55}
-.stack li b{color:var(--ink);font-weight:600}
-.stack-tick{
-  flex:none;width:18px;height:18px;margin-top:3px;color:var(--clay);
-}
-.stack-tick svg{width:100%;height:100%;display:block}
-.capacity{
-  margin-top:clamp(30px,4vw,44px);
-  display:flex;gap:14px;align-items:flex-start;
-  border-top:1px solid var(--rule);padding-top:20px;
-}
-.capacity-dot{
-  flex:none;width:9px;height:9px;border-radius:50%;background:var(--clay);margin-top:8px;
-  animation:blip 2.6s ease-in-out infinite;
-}
-@keyframes blip{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--clay) 55%,transparent)}70%{box-shadow:0 0 0 9px color-mix(in srgb,var(--clay) 0%,transparent)}}
-.capacity p{font-size:.93rem;color:var(--ink-2);max-width:66ch}
-.capacity b{color:var(--ink);font-weight:600}
 
 /* ---------- experience ---------- */
 .roles{display:flex;flex-direction:column}
@@ -723,8 +517,8 @@ a.cline:hover .cval{color:var(--clay-ink)}
     <a class="mark" href="#top"><span class="mark-dot"></span>Yohan Lewis</a>
     <div class="nav-links">
       <a href="#ask">Ask Justice</a>
-      <a href="#help">How I help</a>
-      <a href="#experience" data-opt>Experience</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills" data-opt>Skills</a>
       <a href="#play">Play</a>
       <a href="#contact">Contact</a>
     </div>
@@ -740,12 +534,12 @@ a.cline:hover .cval{color:var(--clay-ink)}
         <p class="eyebrow">Cincinnati, Ohio</p>
         <div class="name-line">
           <h1 class="display">Yohan&nbsp;Lewis</h1>
-          <p class="deck">Founder of Lewis Automations. Sports Marketing and Finance student at Xavier University.</p>
+          <p class="deck">Sports Marketing and Finance student at Xavier University. President of the Black Student Association.</p>
         </div>
-        <p class="lede prose">I build systems that do the work nobody remembers to do. I also sell, organize, and lead in the physical world &mdash; a ballpark concourse, a student senate floor, an organization I was elected to lead. The two go together better than people expect.</p>
+        <p class="lede prose">I sell, organize, and lead. On a ballpark concourse I drove over $44,000 in game-day revenue for the Cincinnati Reds. On campus I&rsquo;ve managed $37,000 in student budgets, sat on the student senate floor, and was elected to lead the Black Student Association. Next I want to bring that to a sports business or finance team.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="#help">How I help businesses</a>
-          <a class="btn btn-ghost" href="mailto:lewisautomations@gmail.com">Get in touch</a>
+          <a class="btn btn-primary" href="#experience">See my experience</a>
+          <a class="btn btn-ghost" href="mailto:lewisyohan9@gmail.com">Get in touch</a>
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/yohanlewis" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
@@ -794,7 +588,7 @@ a.cline:hover .cval{color:var(--clay-ink)}
       <div class="shead reveal" style="margin-bottom:0">
         <p class="eyebrow">Meet Justice</p>
         <h2 class="h2">Don&rsquo;t feel like reading? Ask Justice.</h2>
-        <p class="lede prose">Justice is the voice on this site. Talk to it or type at it. It knows my background, my business, what I build, how I price it, and what I&rsquo;m looking for, and it will read the answer back to you. If it doesn&rsquo;t know something, it says so instead of guessing.</p>
+        <p class="lede prose">Justice is the voice on this site. Talk to it or type at it. It knows my experience, my leadership, my coursework, and what I&rsquo;m looking for, and it will read the answer back to you. If it doesn&rsquo;t know something, it says so instead of guessing.</p>
       </div>
 
       <div class="agent reveal" id="agent" data-state="idle">
@@ -806,14 +600,14 @@ a.cline:hover .cval{color:var(--clay-ink)}
 
         <div class="agent-main">
           <p class="agent-status" id="ag-status">Justice &middot; ready</p>
-          <div class="agent-answer muted" id="ag-answer" role="status" aria-live="polite">I&rsquo;m Justice. Ask me anything about Yohan &mdash; what he builds, what he&rsquo;s studying, what it would cost you, or whether he&rsquo;s the right person for something you have in mind.</div>
+          <div class="agent-answer muted" id="ag-answer" role="status" aria-live="polite">I&rsquo;m Justice. Ask me anything about Yohan &mdash; his experience, what he&rsquo;s studying, what he&rsquo;s led, or whether he&rsquo;s the right fit for your team.</div>
 
           <div class="agent-chips" id="ag-chips">
-            <button class="qchip" type="button">What does Lewis Automations actually do?</button>
-            <button class="qchip" type="button">What would this cost me?</button>
             <button class="qchip" type="button">Why should I hire Yohan as an intern?</button>
-            <button class="qchip" type="button">What has he actually built?</button>
-            <button class="qchip" type="button">How do I get the free audit?</button>
+            <button class="qchip" type="button">What did he do for the Cincinnati Reds?</button>
+            <button class="qchip" type="button">What has he led on campus?</button>
+            <button class="qchip" type="button">What do people say about him?</button>
+            <button class="qchip" type="button">How do I reach him?</button>
           </div>
 
           <form class="agent-form" id="ag-form">
@@ -844,247 +638,6 @@ a.cline:hover .cval{color:var(--clay-ink)}
     </div>
   </section>
 
-  <!-- ============ AUTOMATIONS ============ -->
-  <section id="automations" class="band rule-top">
-    <div class="wrap">
-      <div class="shead reveal">
-        <p class="eyebrow">Lewis Automations LLC &middot; Founded 2026 &middot; <a class="tlink" href="https://lewisautomations.co" target="_blank" rel="noopener">lewisautomations.co</a></p>
-        <h2 class="h2">Most businesses don&rsquo;t lose work.<br>They lose the follow-up.</h2>
-        <p class="lede prose">A message comes in. Somebody is meant to answer it. They&rsquo;re busy, it waits, and by the time anyone looks the person has moved on. That failure is almost never a people problem. It&rsquo;s a system problem, and a system can fix it.</p>
-      </div>
-
-      <div class="build-grid reveal">
-        <article class="build">
-          <div class="build-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/>
-            </svg>
-          </div>
-          <h3>Answers in seconds</h3>
-          <p>Every inbound form, call, or message gets a real reply immediately. At two in the morning the same as two in the afternoon.</p>
-        </article>
-        <article class="build">
-          <div class="build-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 12a9 9 0 0 1 15.3-6.4L21 8"/><path d="M21 3v5h-5"/>
-              <path d="M21 12a9 9 0 0 1-15.3 6.4L3 16"/><path d="M3 21v-5h5"/>
-            </svg>
-          </div>
-          <h3>Follow-up that doesn&rsquo;t forget</h3>
-          <p>Sequences that keep going until someone books, replies, or opts out, then hand off cleanly to a human. Nothing depends on memory.</p>
-        </article>
-        <article class="build">
-          <div class="build-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>
-              <path d="M10 6.5h3.5a2 2 0 0 1 2 2V14"/><path d="M14 17.5h-3.5a2 2 0 0 1-2-2V10"/>
-            </svg>
-          </div>
-          <h3>Tools wired together</h3>
-          <p>The software a business already pays for, connected so information stops getting retyped from one screen into another.</p>
-        </article>
-      </div>
-
-      <div class="pipe-wrap reveal">
-        <p class="eyebrow">What actually happens</p>
-        <div class="pipe-box">
-        <span class="pipe-pulse" aria-hidden="true"></span>
-        <ol class="pipe">
-          <li class="pstep">
-            <span class="pnum">01</span>
-            <h4>Something comes in</h4>
-            <p>A form submission, a missed call, an email, a walk-in logged at the desk.</p>
-          </li>
-          <li class="pstep">
-            <span class="pnum">02</span>
-            <h4>The system reads it</h4>
-            <p>It pulls out what matters: who this is, what they want, how urgent it is.</p>
-          </li>
-          <li class="pstep">
-            <span class="pnum">03</span>
-            <h4>Action fires</h4>
-            <p>A reply goes out, a record is created, a booking link is sent, a reminder is queued.</p>
-          </li>
-          <li class="pstep">
-            <span class="pnum">04</span>
-            <h4>You hear about it</h4>
-            <p>Only when a person is genuinely needed. The rest is already handled.</p>
-          </li>
-        </ol>
-        </div>
-      </div>
-
-      <div class="note reveal">
-        <h3>How it actually gets built</h3>
-        <p>I built this stack myself, including the process I use to map an operation before I write a line of it. A discovery call gets captured and transcribed, the workflow gets drafted and checked against how the business really runs, and only then does anything get built. Everything sits on top of the software a company already pays for, so nothing has to be replaced and nobody has to relearn their job. If follow-up keeps slipping where you work, I&rsquo;d like to hear how it breaks.</p>
-        <div class="chips">
-          <span class="chip">n8n</span>
-          <span class="chip">Zapier</span>
-          <span class="chip">Twilio</span>
-          <span class="chip">Calendly</span>
-          <span class="chip">OpenAI API</span>
-          <span class="chip">Otter.ai</span>
-          <span class="chip">Webhooks &amp; REST</span>
-          <span class="chip">HTML / CSS</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ HOW I CAN HELP ============ -->
-  <section id="help" class="band rule-top">
-    <div class="wrap">
-      <div class="shead reveal">
-        <p class="eyebrow">How I can help</p>
-        <h2 class="h2">You&rsquo;re not short on leads.<br>You&rsquo;re short on what happens next.</h2>
-        <p class="lede prose">Every business already spends money to get someone&rsquo;s attention. Ads, referrals, signage, a rep walking through the door. The expensive part is done. What happens in the next five minutes decides whether that money turned into anything, and that part is fixable. Pick whichever of these sounds like your week.</p>
-      </div>
-
-      <p class="pull reveal">A lead that never gets answered <em>doesn&rsquo;t complain.</em> It just quietly goes somewhere else, and nothing in your reporting ever tells you it was there.</p>
-
-      <!-- lead magnet -->
-      <div class="magnet reveal">
-        <div>
-          <p class="eyebrow">Start here &middot; costs you nothing</p>
-          <h3>The Leak Audit</h3>
-          <p>One short call, then I trace exactly how an inquiry travels through your business today: who touches it, how long it waits, and where it dies. You get a written one-page map of every leak I find, with what each one is plausibly costing you. You keep it either way. If nothing needs fixing, I&rsquo;ll tell you that and we&rsquo;re done.</p>
-        </div>
-        <div class="magnet-get">
-          <ul class="magnet-list">
-            <li>A one-page map of your current follow-up path</li>
-            <li>The specific points where inquiries go cold</li>
-            <li>A rough dollar figure on what that gap costs</li>
-            <li>What I&rsquo;d build, and what I&rsquo;d leave alone</li>
-          </ul>
-          <a class="btn btn-slab" href="mailto:lewisautomations@gmail.com?subject=Free%20Leak%20Audit">Request the audit</a>
-        </div>
-      </div>
-
-      <!-- the menu -->
-      <div class="offer-grid reveal">
-        <article class="offer">
-          <span class="offer-tag">The problem</span>
-          <h3>Speed to first reply</h3>
-          <p>Someone reaches out and waits hours for an answer. By then they&rsquo;ve called two competitors. Every inbound message gets a real, useful reply in seconds, at 3am the same as 3pm, while they&rsquo;re still interested.</p>
-        </article>
-        <article class="offer">
-          <span class="offer-tag">The problem</span>
-          <h3>Follow-up that finishes</h3>
-          <p>One message goes out, nobody replies, and that&rsquo;s the end of it. Sequences keep going until the person books, answers, or opts out, then hand off to a human at the moment a human actually adds something.</p>
-        </article>
-        <article class="offer">
-          <span class="offer-tag">The problem</span>
-          <h3>Appointments that hold</h3>
-          <p>Booked slots quietly evaporate and the time is gone. Reminders go out before, and the second someone misses, a reschedule offer lands. A no-show becomes a rebooking instead of a hole in the day.</p>
-        </article>
-        <article class="offer">
-          <span class="offer-tag">The problem</span>
-          <h3>Old leads nobody works</h3>
-          <p>There&rsquo;s a list of people who went quiet and no one has time to call them. A reactivation campaign reopens those conversations with contacts you have already paid to acquire. This is usually the fastest money in the building.</p>
-        </article>
-        <article class="offer">
-          <span class="offer-tag">The problem</span>
-          <h3>The same data, typed three times</h3>
-          <p>Your team retypes a name into the booking tool, the spreadsheet, and the invoice. Intake, scheduling, records, and reporting move between systems on their own, and those hours go back to work that needs a person.</p>
-        </article>
-        <article class="offer">
-          <span class="offer-tag">The problem</span>
-          <h3>Reading and sorting eats the day</h3>
-          <p>Messages pile up and someone has to triage them. Requests get summarized, categorized, and routed automatically, with replies drafted and waiting for a human yes rather than a human blank page.</p>
-        </article>
-        <article class="offer">
-          <span class="offer-tag">The problem</span>
-          <h3>Automations that rot</h3>
-          <p>Systems break quietly when a business changes and nobody notices for a month. I monitor what I build, fix what breaks, and adjust it as you grow. That&rsquo;s what the ongoing fee covers.</p>
-        </article>
-        <article class="offer">
-          <span class="offer-tag">The problem</span>
-          <h3>Nobody knows the numbers</h3>
-          <p>You can feel that follow-up is slow but you can&rsquo;t prove it. Simple reporting on response time, contact rate, and bookings, so the thing you were guessing at becomes a number you can watch move.</p>
-        </article>
-      </div>
-
-      <!-- ROI -->
-      <div class="roi reveal">
-        <p class="eyebrow">Where the return actually comes from</p>
-        <div class="roi-grid">
-          <div class="roi-item">
-            <h4>Revenue you already bought</h4>
-            <p class="roi-eq">inquiries acquired &times; share never answered</p>
-            <p>You spent real money getting those people to raise their hand. Every one that goes cold writes that spend off.</p>
-          </div>
-          <div class="roi-item">
-            <h4>Hours handed back</h4>
-            <p class="roi-eq">manual tasks per week &times; hourly cost</p>
-            <p>Retyping, chasing, reminding. Work that has to happen and that nobody should be doing by hand.</p>
-          </div>
-          <div class="roi-item">
-            <h4>Slots that get kept</h4>
-            <p class="roi-eq">bookings &times; no-show rate &times; value</p>
-            <p>A reminder before and a reschedule offer after turn an empty slot back into a paid one.</p>
-          </div>
-          <div class="roi-item">
-            <h4>Capacity without hiring</h4>
-            <p class="roi-eq">more volume &divide; same headcount</p>
-            <p>The system absorbs growth at the staffing level you already have, which is the cheapest hire you&rsquo;ll ever make.</p>
-          </div>
-        </div>
-        <p class="roi-foot">I won&rsquo;t put invented percentages on this page. Those four lines are the only levers that matter, and the audit fills in your real numbers for each one before you spend anything. If the math doesn&rsquo;t clear the cost of the build, I&rsquo;ll say so.</p>
-      </div>
-
-      <!-- risk reversal -->
-      <div class="reveal" style="margin-top:clamp(42px,5.5vw,66px)">
-        <p class="eyebrow">Why this is a low-risk yes</p>
-        <ul class="stack">
-          <li>
-            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
-            <span><b>You see the plan before anything is built.</b> I map your process and write a blueprint of exactly what the system will do, step by step.</span>
-          </li>
-          <li>
-            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
-            <span><b>You approve it before I start.</b> Nothing gets built on an assumption I made in my head.</span>
-          </li>
-          <li>
-            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
-            <span><b>If the build doesn&rsquo;t do what the blueprint says, you don&rsquo;t pay the setup fee.</b> The standard is written down in advance, so neither of us has to argue about it later.</span>
-          </li>
-          <li>
-            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
-            <span><b>It runs on the tools you already pay for.</b> No migration, no ripping out software your team just learned.</span>
-          </li>
-          <li>
-            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
-            <span><b>Your staff&rsquo;s day doesn&rsquo;t change.</b> The system works underneath what they already do. It frees the team rather than replacing it.</span>
-          </li>
-          <li>
-            <span class="stack-tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
-            <span><b>Builds go live in weeks, not quarters.</b> You should be seeing it work while you still remember why you wanted it.</span>
-          </li>
-        </ul>
-
-        <div class="terms">
-          <div class="term">
-            <h4>One-time setup</h4>
-            <p>Charged when I design and build the system around your process. Quoted after the audit, so you know the number before you commit to anything.</p>
-          </div>
-          <div class="term">
-            <h4>Monthly or yearly management</h4>
-            <p>Covers monitoring, fixes, and improvements as the business changes. Cancel it and the system is still yours.</p>
-          </div>
-          <div class="term">
-            <h4>Nothing before the audit</h4>
-            <p>The map costs you nothing and carries no obligation. I&rsquo;d rather turn down a build I can&rsquo;t justify than sell you one.</p>
-          </div>
-        </div>
-
-        <div class="capacity">
-          <span class="capacity-dot" aria-hidden="true"></span>
-          <p><b>A note on availability.</b> I&rsquo;m a full-time student at Xavier, which means I take a small number of builds at a time on purpose. I would rather do three of these properly than ten of them badly. If I&rsquo;m full, I&rsquo;ll tell you that instead of taking your money and getting to it later.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ EXPERIENCE ============ -->
   <section id="experience" class="band rule-top">
     <div class="wrap">
@@ -1101,15 +654,6 @@ a.cline:hover .cval{color:var(--clay-ink)}
           </div>
           <p class="role-when">Mar 2026 &mdash; Sep 2026</p>
           <p class="role-note">Drove over $44,070 in game-day revenue through relationship-building and in-person selling across the concourse and stands, consistently beating transaction and engagement targets. Supported Reds Community Fund fundraisers, the Redlegs Run, and Reds Baseball &amp; Softball Camps.</p>
-        </article>
-
-        <article class="role">
-          <div class="role-head">
-            <h3 class="role-title">Founder</h3>
-            <p class="role-org">Lewis Automations LLC &middot; Cincinnati, OH</p>
-          </div>
-          <p class="role-when">2026 &mdash; Present</p>
-          <p class="role-note">Built the company&rsquo;s entire technical stack solo, from capture through automated response and booking. Handle prospecting, discovery calls, system design, and delivery myself.</p>
         </article>
 
         <article class="role">
@@ -1265,7 +809,7 @@ a.cline:hover .cval{color:var(--clay-ink)}
       <div class="shead reveal">
         <p class="eyebrow">Interlude</p>
         <h2 class="h2">Bored of reading? Fine. Play something.</h2>
-        <p class="lede prose">This is the whole job as an arcade game. Messages are heading for the inbox. Keep them off it.</p>
+        <p class="lede prose">Messages are heading for the inbox. Keep them off it.</p>
       </div>
 
       <div class="game-shell">
@@ -1300,25 +844,22 @@ a.cline:hover .cval{color:var(--clay-ink)}
       <div class="shead reveal" style="margin-bottom:0">
         <p class="eyebrow">Contact</p>
         <h2 class="h2">Let&rsquo;s talk.</h2>
-        <p class="lede prose">Hiring for a sports business or finance internship, running a company where follow-up keeps slipping, or just want to compare notes on building something while still in school. All three are welcome.</p>
+        <p class="lede prose">Hiring for a sports business or finance internship, or just want to connect? Either one is welcome.</p>
         <div class="btn-row" style="margin-top:8px">
-          <a class="btn btn-primary" href="mailto:lewisautomations@gmail.com">Email me</a>
+          <a class="btn btn-primary" href="mailto:lewisyohan9@gmail.com">Email me</a>
           <a class="btn btn-ghost" href="tel:+12487274906">Call</a>
         </div>
       </div>
 
       <div class="reveal">
-        <a class="cline" href="mailto:lewisautomations@gmail.com">
-          <span class="clabel">Email</span><span class="cval">lewisautomations@gmail.com</span>
+        <a class="cline" href="mailto:lewisyohan9@gmail.com">
+          <span class="clabel">Email</span><span class="cval">lewisyohan9@gmail.com</span>
         </a>
         <a class="cline" href="tel:+12487274906">
           <span class="clabel">Phone</span><span class="cval">(248) 727&#8209;4906</span>
         </a>
         <a class="cline" href="https://www.linkedin.com/in/yohanlewis" target="_blank" rel="noopener">
           <span class="clabel">LinkedIn</span><span class="cval">in/yohanlewis</span>
-        </a>
-        <a class="cline" href="https://lewisautomations.co" target="_blank" rel="noopener">
-          <span class="clabel">Business</span><span class="cval">lewisautomations.co</span>
         </a>
         <div class="cline">
           <span class="clabel">Based in</span><span class="cval">Cincinnati, Ohio</span>
@@ -1329,7 +870,7 @@ a.cline:hover .cval{color:var(--clay-ink)}
 
   <div class="wrap">
     <div class="foot">
-      <span>Yohan Lewis &middot; Founder, Lewis Automations LLC</span>
+      <span>Yohan Lewis &middot; Xavier University &rsquo;28</span>
       <span>Built by hand, like everything else here.</span>
     </div>
   </div>
@@ -1732,7 +1273,7 @@ a.cline:hover .cval{color:var(--clay-ink)}
 
 <script>
 /* =========================================================
-   VOICE AGENT  â€”  ask anything about Yohan and his business
+   VOICE AGENT  â€”  ask anything about Yohan
    ========================================================= */
 (function(){
   "use strict";
@@ -1750,69 +1291,49 @@ a.cline:hover .cval{color:var(--clay-ink)}
   var noteEl  = document.getElementById("ag-note");
   var chips   = document.getElementById("ag-chips");
 
-  var EMAIL = "lewisautomations@gmail.com";
+  var EMAIL = "lewisyohan9@gmail.com";
   var READY = "Justice \u00b7 ready";
 
   /* ---------- the facts ---------- */
   var FACTS = [
-    "WHO HE IS: Yohan Lewis. Lives in Cincinnati, Ohio. Founder of Lewis Automations LLC. Full-time student at Xavier University studying for a Bachelor of Science in Sports Marketing with a minor in Finance, expected to graduate May 2028. Reach him at " + EMAIL + ", by phone at (248) 727-4906, on LinkedIn at linkedin.com/in/yohanlewis, or through lewisautomations.co.",
-    "THE BUSINESS: Lewis Automations LLC, founded 2026, founder-run and early stage. He builds custom automation and AI workflow systems for businesses so that follow-up never depends on a person remembering to do it. He built the entire technical stack himself, self-taught. His tools are n8n, Zapier, Twilio, Calendly, the OpenAI API, Otter.ai, and general webhook and REST integration.",
-    "WHAT HE BUILDS: Instant first replies to any inbound message within seconds, day or night. Follow-up sequences that continue until the person books, replies, or opts out, then hand off to a human. Appointment reminders and no-show recovery that turns a missed slot into a rebooking. Reactivation campaigns that reopen conversations with old leads a business already paid to acquire. Back-office automation so intake, scheduling, records, and reporting move between systems without anyone retyping. AI-assisted triage that summarizes, categorizes, and routes requests and drafts replies for a human to approve. Simple reporting on response time, contact rate, and bookings. Ongoing monitoring so the system does not quietly rot.",
-    "HOW A BUILD WORKS: First a free Leak Audit. One short call, then he traces how an inquiry travels through the business today and writes a one-page map of where it stalls and what that gap plausibly costs. The map is free and the client keeps it whether or not they hire him. If a build makes sense, he writes a blueprint of exactly what the system will do. The client approves the blueprint before he builds anything. He builds it, the client tests and approves it, it goes live, and he monitors and maintains it afterward.",
-    "PRICING AND GUARANTEE: A one-time setup fee charged when he designs and builds the system, quoted after the audit so the client knows the number before committing. Then a monthly or yearly management fee covering monitoring, fixes, and improvements. If the finished build does not do what the approved blueprint says, the client does not pay the setup fee. The audit itself is free with no obligation. Cancel the management fee and the system is still theirs. He has no fixed public price list because every build is quoted after the audit.",
-    "WHY IT PAYS: Four levers. Revenue already bought, meaning inquiries a business paid to acquire that never get answered. Hours handed back, meaning manual tasks per week times hourly cost. Slots that get kept, meaning bookings times no-show rate times value. Capacity without hiring, meaning more volume at the same headcount. He deliberately does not publish invented percentages. The audit fills in the client's real numbers, and if the math does not clear the cost of the build he says so.",
-    "IF ASKED ABOUT CLIENTS, RESULTS, OR PROOF: Lewis Automations does not have published client case studies, testimonials, or revenue figures. Never invent any. If someone asks for proof or references, say plainly that there are no published case studies to share, and that the free Leak Audit is how they can see exactly how he works at no cost and no obligation. He works with service businesses across industries rather than one fixed niche. He takes a small number of builds at a time on purpose, because he is a full-time student.",
+    "WHO HE IS: Yohan Lewis. Lives in Cincinnati, Ohio. Full-time student at Xavier University studying for a Bachelor of Science in Sports Marketing with a minor in Finance, expected to graduate May 2028. Reach him at " + EMAIL + ", by phone at (248) 727-4906, or on LinkedIn at linkedin.com/in/yohanlewis.",
     "JOB EXPERIENCE: Game Day Sales Intern at the Cincinnati Reds, March 2026 to September 2026. He drove over $44,070 in game-day revenue through relationship-building and in-person selling, consistently exceeding transaction and engagement targets, and supported Reds Community Fund fundraisers, the Redlegs Run, and Reds Baseball and Softball Camps. Resident Assistant at Xavier University, August 2025 to February 2026, responsible for a floor community of more than 40 students, running programming, mediating conflicts, enforcing policy, and assisting with crisis response. Athletic Director Intern at Cincinnati College Preparatory Academy, September 2025 to January 2026, managing athletic scheduling, game-day logistics, staff coordination, and writing the procedures that made events run consistently. Office Assistant at the Xavier University Office of Financial Aid, September 2024 to February 2026, handling confidential student financial records under FERPA and answering student and parent questions. Cashier at Inflatable Playspaces in Royal Oak, Michigan, August 2022 to May 2024, running register and inventory and planning birthday parties and events.",
     "CAMPUS LEADERSHIP: President of the Black Student Association since April 2026. As president he led the BSA Welcome Back Cookout to help students find a sense of belonging. Before that he was BSA treasurer from April 2025 to April 2026, managing a $17,000 annual budget including financial planning and expense tracking. Mentor in the TRIO First Steps Bridge program for incoming students. Senator in the Student Government Association since January 2026. Vice President of Club Flag Football since August 2025. Member of the Alpha Alpha Alpha honor society since October 2025. Committee member for the Antonio Johnson Scholarship Gala from November 2024 to February 2026, managing a $20,000 event budget with the team. In total he has managed about $37,000 in student-organization budgets.",
     "RECOGNITION AND BACKGROUND: First-generation college student and participant in Xavier's THR1VE Center and TRIO Student Support Services programs. Received the TRIO Freshman of the Year and Sophomore of the Year awards. Studied abroad in Peru. Does community service in Cincinnati and Detroit. Dr. Daniel McSpadden, Assistant Vice President for Ignatian Belonging at Xavier, who has worked with him through THR1VE and TRIO, describes him as intelligent with excellent communication skills and clear, concise writing, a role model his peers and mentees look up to, and a person of great resilience and commitment to service. Do not invent any other quotes or references.",
-    "SKILLS: Automation and AI, including workflow design in n8n and Zapier, API and webhook integration, AI-assisted workflows and prompt design, process mapping from a discovery call, SMS and voice routing with Twilio, and scheduling automation. Business and finance, including financial accounting, business finance, investments, discounted cash flow modeling in Excel, budgeting and expense tracking, real estate investment screening, and managing about $37,000 in student-organization budgets. Sales and communication, including in-person prospecting and cold walk-ins, discovery calls, relationship-driven game-day sales, public speaking, persuasive writing, and customer service under pressure. Leadership and operations, including leading a student organization as president, organizing large campus events, event and game-day logistics, policy and procedure design, conflict resolution, crisis response support, and peer mentorship.",
+    "SKILLS: Automation and AI, self-taught, including workflow design in n8n and Zapier, API and webhook integration, AI-assisted workflows and prompt design, process mapping from a discovery call, SMS and voice routing with Twilio, and scheduling automation. Business and finance, including financial accounting, business finance, investments, discounted cash flow modeling in Excel, budgeting and expense tracking, real estate investment screening, and managing about $37,000 in student-organization budgets. Sales and communication, including in-person prospecting and cold walk-ins, discovery calls, relationship-driven game-day sales, public speaking, persuasive writing, and customer service under pressure. Leadership and operations, including leading a student organization as president, organizing large campus events, event and game-day logistics, policy and procedure design, conflict resolution, crisis response support, and peer mentorship.",
     "COURSEWORK: Finance classes completed are Financial Accounting, Business Finance, and Investments. Still ahead are Mergers and Acquisitions and Real Estate Finance.",
-    "WHAT HE WANTS: Internships in sports business and finance. Clients whose follow-up keeps slipping. And conversations with people building something while still in school. He is genuinely interested in hearing how follow-up breaks inside a real business, whether or not it turns into work."
+    "WHAT HE WANTS: Internships in sports business and finance, and conversations with people who work in those fields."
   ].join("\n\n");
 
   var INSTRUCTIONS =
-    "You are Justice, the voice assistant on Yohan Lewis's personal website. Visitors ask you about him and about his company, Lewis Automations. Answer only from the facts below.\n\n" +
+    "You are Justice, the voice assistant on Yohan Lewis's personal website. Visitors, often recruiters and hiring managers, ask you about him. Answer only from the facts below.\n\n" +
     "HOW TO ANSWER\n" +
     "- Your name is Justice. If someone asks who you are, say you are Justice, the assistant on Yohan's site, and that you can answer questions about him and his work.\n" +
     "- Two to four short spoken sentences unless the visitor asks for more detail. Your answer is read aloud, so write plain sentences a person would say.\n" +
     "- No markdown, no bullet points, no headings, no emoji, no numbered lists.\n" +
     "- Call him Yohan. He uses he and him.\n" +
-    "- Never invent numbers, clients, testimonials, results, prices, or dates. If asked for case studies or references, say plainly that the company is early stage and does not have them yet.\n" +
+    "- Never invent numbers, employers, quotes, awards, results, or dates.\n" +
     "- Be warm, direct, and grounded. Calm, never rushed. No hype words, no sales language, no exclamation marks.\n" +
-    "- If someone asks about hiring him or wants to work together, answer honestly and point them to the free Leak Audit and " + EMAIL + ".\n\n" +
+    "- If someone asks about hiring him or wants to connect, answer honestly and point them to " + EMAIL + ".\n\n" +
     "ALWAYS BE USEFUL. Never stonewall a visitor.\n" +
-    "- If someone is unsure what to ask, or says something vague like hello, help, or I don't know, give them a short friendly steer: offer two or three specific things you can tell them about, such as what Yohan builds, what it costs, or his background.\n" +
-    "- If someone asks a general question that is not specifically about Yohan, such as what automation means, what a CRM is, how a booking system works, what n8n or Zapier do, or whether automation would suit their type of business, just answer it plainly and briefly in your own words, then connect it back to how Yohan works if that is relevant. These are fair questions from someone who is unsure, and answering them is your job.\n" +
-    "- If someone describes their own business or problem and asks whether Yohan could help, reason it through with them honestly using what you know about what he builds. If it is a fit, say so and point them to the audit. If it is genuinely not, say that too.\n" +
+    "- If someone is unsure what to ask, or says something vague like hello, help, or I don't know, give them a short friendly steer: offer two or three specific things you can tell them about, such as his Reds internship, his campus leadership, or what he is studying.\n" +
+    "- If someone asks a general question about sports business, finance, or what an internship role involves, answer it plainly and briefly, then connect it back to Yohan if that is relevant.\n" +
+    "- If someone describes a role and asks whether Yohan would be a fit, reason it through honestly using his experience below. Say where he is strong and where he would still be learning.\n" +
     "- The one thing you must not do is invent facts about Yohan. If a question needs a specific detail about him that is not in the facts below, say you are not sure of that one and suggest emailing " + EMAIL + ", then offer what you do know that is close.\n" +
-    "- Only decline a question if it is unrelated to Yohan, his work, or business in general, or if answering would be inappropriate.\n\n" +
+    "- Only decline a question if it is unrelated to Yohan, his work, or his field, or if answering would be inappropriate.\n\n" +
     "FACTS ABOUT YOHAN\n\n" + FACTS;
 
   /* ---------- offline knowledge base (used when Claude isn't available) ---------- */
   var KB = [
-    { k:["what does lewis automations","what is lewis automations","what do you do","what does he do","about the business","the company"],
-      a:"Lewis Automations builds custom automation systems so a business never loses work to slow follow-up. Every inbound message gets an answer in seconds, follow-up continues until the person books or opts out, and the tools a company already pays for get wired together. Yohan founded it in 2026 and built the whole stack himself." },
-    { k:["cost","price","pricing","how much","charge","fee","expensive","budget"],
-      a:"There's a one-time setup fee when he designs and builds the system, then a monthly or yearly management fee for monitoring and improvements. He quotes the number after the free audit, so you know it before you commit to anything. The audit itself costs nothing." },
-    { k:["audit","free","leak","get started","start","first step","next step"],
-      a:"Start with the free Leak Audit. One short call, then he traces how an inquiry actually travels through your business and writes you a one-page map of where it stalls and what that's costing. You keep the map whether or not you hire him. Email " + EMAIL + " to ask for it." },
-    { k:["guarantee","risk","refund","what if it doesn't work","promise"],
-      a:"You approve a written blueprint before he builds anything, and if the finished build doesn't do what that blueprint says, you don't pay the setup fee. The standard is agreed in advance so nobody has to argue about it later. The audit before all of that is free and carries no obligation." },
     { k:["hire","intern","internship","recruit","job","candidate","why should"],
-      a:"He drove over $44,070 in game-day revenue for the Cincinnati Reds, has managed about $37,000 in student-organization budgets, leads the Black Student Association as president, and built an automation company from nothing while carrying a full course load. He's a two-time TRIO student of the year. He's a Sports Marketing major with a Finance minor at Xavier, graduating May 2028. Email " + EMAIL + " to talk." },
+      a:"He drove over $44,070 in game-day revenue for the Cincinnati Reds, has managed about $37,000 in student-organization budgets, and leads the Black Student Association as president, all while carrying a full course load. He's a two-time TRIO student of the year. He's a Sports Marketing major with a Finance minor at Xavier, graduating May 2028. Email " + EMAIL + " to talk." },
     { k:["reds","cincinnati reds","baseball","raffle","50/50","sports"],
       a:"He was a Game Day Sales Intern with the Cincinnati Reds from March to September 2026. He drove over $44,070 in game-day revenue through relationship-building and in-person selling, beating his transaction and engagement targets, and supported Reds Community Fund events including the Redlegs Run and youth camps." },
     { k:["study","studying","school","college","university","major","xavier","degree","graduate","education"],
       a:"He's at Xavier University in Cincinnati, studying for a Bachelor of Science in Sports Marketing with a minor in Finance. He expects to graduate in May 2028. He's finished Financial Accounting, Business Finance, and Investments, with Mergers and Acquisitions and Real Estate Finance still ahead." },
     { k:["built","build","stack","tools","tech","software","n8n","zapier","twilio","technical","technology"],
-      a:"He works in n8n and Zapier for workflow logic, Twilio for messaging and voice, Calendly for booking, and the OpenAI API for the AI parts, plus general webhook and REST integration. He built the entire stack himself, self-taught. Systems run on top of the software a business already pays for, so nothing gets replaced." },
-    { k:["client","clients","case study","results","testimonial","proof","reference","track record"],
-      a:"There aren't published case studies or testimonials to point you to. What he can offer instead is the free Leak Audit, which costs you nothing and shows you exactly how he works on your own process. You'll know what you'd be buying before you buy anything." },
-    { k:["industry","industries","niche","who do you serve","what kind of business","type of business","sector"],
-      a:"Service businesses generally, rather than one fixed niche. If people contact you, book time with you, and someone has to follow up, the same problem shows up regardless of the industry. Tell him what you run and he'll say honestly whether it fits." },
-    { k:["what is automation","how does automation","explain automation","automation mean","workflow mean"],
-      a:"Automation just means a series of steps that runs by itself when something happens. Someone fills in your form, and instead of waiting for a person to notice, the system replies, logs it, and books them in. Yohan designs those steps around how your business already works." },
-    { k:["leadership","president","bsa","black student association","senator","student government","club","organization","flag football","honor"],
+      a:"Alongside sales and finance, he's self-taught in automation. He builds workflows in n8n and Zapier, connects tools through APIs and webhooks, and has worked with Twilio and the OpenAI API." },
+    { k:["leadership","led on campus","campus","lead","president","bsa","black student association","senator","student government","club","organization","flag football","honor"],
       a:"He's President of the Black Student Association at Xavier, where he led the Welcome Back Cookout. Before that he was its treasurer, running a $17,000 annual budget, and he helped manage a $20,000 budget for the Antonio Johnson Scholarship Gala. He's also a Student Government Association senator, Vice President of Club Flag Football, a member of the Alpha Alpha Alpha honor society, and a mentor in the TRIO First Steps Bridge program." },
     { k:["award","awards","recognition","honor","achievement","trio","first generation","first-gen","abroad","peru","mentor"],
       a:"He's a first-generation college student and received the TRIO Freshman of the Year and Sophomore of the Year awards at Xavier. He mentors incoming students in the TRIO First Steps Bridge program, and he studied abroad in Peru." },
@@ -1821,19 +1342,17 @@ a.cline:hover .cval{color:var(--clay-ink)}
     { k:["skill","skills","good at","strength","capable","expertise"],
       a:"Four areas. Automation and AI, meaning workflow design, API integration, and process mapping. Business and finance, including accounting, investments, and cash flow modeling. Sales and communication, including in-person prospecting and public speaking. And leadership and operations, from running a student organization to game-day logistics." },
     { k:["contact","email","reach","phone","call","linkedin","get in touch","talk to"],
-      a:"Email " + EMAIL + ", or call 248 727 4906. He's on LinkedIn at linkedin dot com slash in slash yohanlewis, and the business site is lewisautomations dot co." },
-    { k:["roi","return","worth it","payback","save money","make money","value"],
-      a:"Four levers. Inquiries you already paid to acquire that never get answered. Hours your team spends on work nobody should do by hand. Booked slots that vanish to no-shows. And absorbing more volume without hiring. He won't put invented percentages on it. The audit fills in your real numbers first." },
+      a:"Email " + EMAIL + ", or call 248 727 4906. He's on LinkedIn at linkedin dot com slash in slash yohanlewis." },
     { k:["resident assistant","ra","residence","dorm","housing"],
       a:"He was a Resident Assistant at Xavier from August 2025 to February 2026, responsible for a floor community of more than 40 students. He ran programming, mediated roommate conflicts, enforced policy, and assisted with crisis and emergency response." },
-    { k:["available","availability","capacity","busy","take on","booked","time"],
-      a:"He takes a small number of builds at a time on purpose, because he's a full-time student. He'd rather do three properly than ten badly. If he's full he'll tell you that instead of taking your money and getting to it later." },
+    { k:["looking for","what does he want","goal","goals","career","interested in"],
+      a:"He's looking for internships in sports business and finance, and he's glad to talk with anyone working in those fields. Email " + EMAIL + " to reach him." },
     { k:["who are you","your name","what are you","justice"],
-      a:"I'm Justice, the assistant on Yohan's site. I can tell you about his background, his company Lewis Automations, what he builds, how he prices it, and what he's looking for. Ask me anything and I'll read the answer back to you." },
+      a:"I'm Justice, the assistant on Yohan's site. I can tell you about his experience, his campus leadership, what he's studying, and what he's looking for. Ask me anything and I'll read the answer back to you." },
     { k:["who is","tell me about","yohan","background","about him","introduce"],
-      a:"Yohan Lewis is a Sports Marketing and Finance student at Xavier University in Cincinnati, and the founder of Lewis Automations. He builds automation systems for businesses, drove over $44,000 in game-day revenue for the Cincinnati Reds, and leads the Black Student Association on campus. He graduates in May 2028." }
+      a:"Yohan Lewis is a Sports Marketing and Finance student at Xavier University in Cincinnati. He drove over $44,000 in game-day revenue for the Cincinnati Reds, and leads the Black Student Association on campus. He graduates in May 2028." }
   ];
-  var FALLBACK = "I'm not certain about that one, and I'd rather not guess. I can tell you what Yohan builds, what it would cost you, how the free audit works, or about his background and experience. Or email him directly at " + EMAIL + " and he'll answer it himself.";
+  var FALLBACK = "I'm not certain about that one, and I'd rather not guess. I can tell you about his Reds internship, his campus leadership, his coursework, or what he's looking for. Or email him directly at " + EMAIL + " and he'll answer it himself.";
 
   function localAnswer(q){
     var s = " " + String(q).toLowerCase() + " ";

@@ -31,7 +31,7 @@ top of the body in `index.html`.
 
 ## Justice, the voice assistant
 
-Justice answers questions about you and the business, by voice or by typing, and reads the answer
+Justice answers questions about you, by voice or by typing, and reads the answer
 back out loud.
 
 Running locally, Justice uses a built-in knowledge base of about eighteen answers written into
@@ -47,11 +47,7 @@ list current.** It is the single source of truth for what Justice will say about
 ## Publishing it for real
 
 The file is self-contained, so any static host works. Netlify, Cloudflare Pages, and GitHub Pages
-all accept a drag-and-drop of this folder. Point `lewisautomations.co` at whichever you pick.
-
-One thing to check before you publish: the guarantee in the "Why this is a low-risk yes" section
-says you don't charge the setup fee if a build misses its approved blueprint. That is a real
-commitment. Make sure you still mean it.
+all accept a drag-and-drop of this folder. It is live on GitHub Pages from the `main` branch.
 
 ## Editing
 
@@ -60,12 +56,10 @@ commitment. Make sure you still mean it.
 1. Hero with your name and the orbiting mark
 2. Stats
 3. Justice
-4. Lewis Automations
-5. How I can help, the free Leak Audit, and the ROI section
-6. Experience and campus leadership
-7. Skills and education
-8. Auto-Reply, the game
-9. Contact
+4. Experience, campus leadership, recognition, and the endorsement quote
+5. Skills and education
+6. Auto-Reply, the game
+7. Contact
 
 Colors and fonts are defined once as CSS variables at the very top of the `<style>` block. Change
 `--clay` to recolor every accent on the page at once.
